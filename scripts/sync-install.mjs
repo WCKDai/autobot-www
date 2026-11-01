@@ -11,7 +11,7 @@ import { fileURLToPath } from 'node:url';
 import { createHash } from 'node:crypto';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
-const SOURCE = 'https://raw.githubusercontent.com/wckdboy/invincible/main/install.sh';
+const SOURCE = 'https://raw.githubusercontent.com/WCKDai/invincible/main/install.sh';
 const OUT = resolve(ROOT, 'public/install.sh');
 const META = resolve(ROOT, 'src/data/install.json');
 

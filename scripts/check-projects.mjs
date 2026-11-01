@@ -9,13 +9,14 @@ const projects = JSON.parse(await readFile(resolve(root, 'src/data/projects.json
 const html = await readFile(resolve(root, 'dist/wckd/index.html'), 'utf8');
 const robots = await readFile(resolve(root, 'dist/wckd/robots.txt'), 'utf8');
 const sitemap = await readFile(resolve(root, 'dist/wckd/sitemap.xml'), 'utf8');
-assert.equal(snapshot.owner, 'wckdboy');
+assert.deepEqual(snapshot.owners, ['WCKDai', 'wckdboy']);
 assert.match(snapshot.updated, /^\d{4}-\d{2}-\d{2}$/);
 assert(snapshot.repositories.length > 0);
 const names = new Set();
 for (const repo of snapshot.repositories) {
   assert.equal(repo.visibility, 'public');
-  assert.equal(repo.url, `https://github.com/wckdboy/${repo.name}`);
+  assert(snapshot.owners.includes(repo.owner));
+  assert.equal(repo.url, `https://github.com/${repo.owner}/${repo.name}`);
   assert(!names.has(repo.name.toLowerCase()));
   names.add(repo.name.toLowerCase());
   assert(html.includes(`href="${repo.url}"`), `Repository absent from directory: ${repo.name}`);

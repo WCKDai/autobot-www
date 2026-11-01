@@ -42,8 +42,8 @@ const cleanBody = (body = '') =>
 
 async function repo(name) {
   const [meta, releases] = await Promise.all([
-    api(`/repos/wckdboy/${name}`),
-    api(`/repos/wckdboy/${name}/releases?per_page=14`),
+    api(`/repos/WCKDai/${name}`),
+    api(`/repos/WCKDai/${name}/releases?per_page=14`),
   ]);
 
   const list = releases
