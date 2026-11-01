@@ -8,10 +8,10 @@ export const NAV = {
       { label: 'Privacy', href: '/privacy/' },
       { label: 'Verify', href: '/verify/' },
       { label: 'Releases', href: '/releases/' },
-      { label: 'Source', href: 'https://github.com/wckdboy/autobot' },
+      { label: 'Source', href: 'https://github.com/WCKDai/autobot' },
     ],
     footer: 'Autobot’s own code is free software: the apps Apache-2.0, the agent MIT. No accounts. No telemetry. Made by WCKD.',
-    repo: 'https://github.com/wckdboy/autobot',
+    repo: 'https://github.com/WCKDai/autobot',
   },
   invincible: {
     nav: [
@@ -23,19 +23,19 @@ export const NAV = {
       { label: 'Status', href: '/#status' },
       { label: 'Verify', href: '/verify/' },
       { label: 'Releases', href: '/releases/' },
-      { label: 'Source', href: 'https://github.com/wckdboy/invincible' },
+      { label: 'Source', href: 'https://github.com/WCKDai/invincible' },
     ],
     footer: 'Invincible is free software under MIT. It runs on hardware you own and phones home to nobody. Made by WCKD.',
-    repo: 'https://github.com/wckdboy/invincible',
+    repo: 'https://github.com/WCKDai/invincible',
   },
   wckd: {
     nav: [
       { label: 'Projects', href: '/#projects' },
       { label: 'Brand', href: '/brand/' },
-      { label: 'GitHub', href: 'https://github.com/wckdboy' },
+      { label: 'GitHub', href: 'https://github.com/WCKDai' },
     ],
     footer: 'WCKD is the independent lab behind every project here: software, robotics, experiments and open research.',
-    repo: 'https://github.com/wckdboy',
+    repo: 'https://github.com/WCKDai',
   },
   sovware: {
     nav: [
@@ -44,10 +44,10 @@ export const NAV = {
       { label: 'Stack', href: '/#stack' },
       { label: 'Kernel', href: '/#kernel' },
       { label: 'Brand', href: '/brand/' },
-      { label: 'Source', href: 'https://github.com/wckdboy' },
+      { label: 'Source', href: 'https://github.com/WCKDai' },
     ],
     footer: 'Sovware is the non-profit community that keeps WCKD\'s software sovereign: mirrored, archived, secured, checked.',
-    repo: 'https://github.com/wckdboy',
+    repo: 'https://github.com/WCKDai',
   },
   omnie: {
     nav: [

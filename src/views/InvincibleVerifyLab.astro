@@ -18,21 +18,23 @@ const keyLine = 'invincible-release ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAII/0fXPq
     <h2>1. The signature on SHA256SUMS</h2>
     <p>Every release's SHA256SUMS is signed with one SSH key, pinned in install.sh and here:</p>
     <pre><code>printf '%s\n' '{keyLine}' > allowed_signers
-curl -fsSLO https://github.com/wckdboy/invincible/releases/download/{tag}/SHA256SUMS
-curl -fsSLO https://github.com/wckdboy/invincible/releases/download/{tag}/SHA256SUMS.sig
+curl -fsSLO https://github.com/WCKDai/invincible/releases/download/{tag}/SHA256SUMS
+curl -fsSLO https://github.com/WCKDai/invincible/releases/download/{tag}/SHA256SUMS.sig
 ssh-keygen -Y verify -f allowed_signers -I invincible-release -n invincible-release -s SHA256SUMS.sig &lt; SHA256SUMS</code></pre>
   </section>
 
   <section>
     <h2>2. The file against SHA256SUMS</h2>
-    <pre><code>curl -fsSLO https://github.com/wckdboy/invincible/releases/download/{tag}/invincible-macos-arm64.tar.gz
+    <pre><code>curl -fsSLO https://github.com/WCKDai/invincible/releases/download/{tag}/invincible-macos-arm64.tar.gz
 shasum -a 256 -c SHA256SUMS --ignore-missing</code></pre>
   </section>
 
   <section>
     <h2>3. Who built it</h2>
     <p>Each archive carries a GitHub build attestation from the release workflow:</p>
-    <pre><code>gh attestation verify invincible-macos-arm64.tar.gz --repo wckdboy/invincible</code></pre>
+    <pre><code>gh attestation verify invincible-macos-arm64.tar.gz --repo WCKDai/invincible</code></pre>
+    <p class="small">Releases built before the repository moved to WCKDai (1 November 2026) are attested under its old home:</p>
+    <pre><code>gh attestation verify invincible-macos-arm64.tar.gz --owner wckdboy --signer-repo wckdboy/invincible</code></pre>
   </section>
 
   <section>

@@ -15,7 +15,7 @@ test('authenticated responses cannot expose private or unspecified visibility', 
     repo('public'), repo('secret', { private: true, description: 'must never appear' }),
     repo('contradictory', { visibility: 'private' }), repo('unknown', { private: undefined }),
     repo('missing-visibility', { visibility: undefined }),
-  ]);
+  ], 'wckdboy');
   assert.deepEqual(rows.map((r) => r.name), ['public']);
   assert(!JSON.stringify(rows).includes('must never appear'));
 });
@@ -23,11 +23,11 @@ test('unexpected hosts, owners, malformed records and duplicates stop publicatio
   for (const rows of [null, [repo('safe', { html_url: 'https://example.org/safe' })],
     [repo('safe', { html_url: 'https://github.com/another/safe' })], [repo('../escape')],
     [repo('same'), repo('SAME')], [repo('bad', { description: {} })], [repo('bad', { fork: undefined })]]) {
-    assert.throws(() => publicRepositories(rows));
+    assert.throws(() => publicRepositories(rows, 'wckdboy'));
   }
 });
 test('fork and archived attribution survives normalization; raw API fields do not', () => {
-  const rows = publicRepositories([repo('z', { fork: true, archived: true, description: null, permissions: { admin: true } }), repo('A')]);
+  const rows = publicRepositories([repo('z', { fork: true, archived: true, description: null, permissions: { admin: true } }), repo('A')], 'wckdboy');
   assert.deepEqual(rows.map((r) => r.name), ['A', 'z']);
   assert.equal(rows[1].isFork, true);
   assert.equal(rows[1].isArchived, true);
@@ -44,7 +44,7 @@ test('a later failed API page and an exhausted page budget preserve the previous
     await writeFile(destination, prior);
     for (const mode of ['failure', 'budget']) {
       let calls = 0;
-      await assert.rejects(refresh({ destination, request: async () => {
+      await assert.rejects(refresh({ destination, owners: ['wckdboy'], request: async () => {
         calls++;
         if (mode === 'failure' && calls === 2) return new Response('', { status: 503 });
         return Response.json(Array.from({ length: 100 }, (_, n) => repo(`repo-${calls}-${n}`)));
@@ -62,7 +62,7 @@ test('multi-page publication includes every public row and old readers retain th
   const old = await open(destination);
   try {
     let calls = 0;
-    const value = await refresh({ destination, now: () => new Date('2026-10-25T00:00:00Z'), request: async (url) => {
+    const value = await refresh({ destination, owners: ['wckdboy'], now: () => new Date('2026-10-25T00:00:00Z'), request: async (url) => {
       calls++;
       assert.equal(new URL(url).hostname, 'api.github.com');
       return Response.json(calls === 1 ? Array.from({ length: 100 }, (_, n) => repo(`repo-${n}`)) : [repo('last'), repo('secret', { private: true })]);
@@ -74,6 +74,26 @@ test('multi-page publication includes every public row and old readers retain th
     assert.deepEqual(JSON.parse(await readFile(destination, 'utf8')), value);
     assert.deepEqual(await readdir(directory), ['catalog.json']);
   } finally { await old.close(); await rm(directory, { recursive: true, force: true }); }
+});
+
+test('the catalog covers the WCKDai org and the wckdboy account, and a name in both stops publication', async () => {
+  const directory = await mkdtemp(join(tmpdir(), 'wckd-project-test-'));
+  try {
+    const destination = join(directory, 'catalog.json');
+    const urls = [];
+    const value = await refresh({ destination, request: async (url) => {
+      urls.push(url);
+      const owner = url.includes('/orgs/WCKDai/') ? 'WCKDai' : 'wckdboy';
+      return Response.json(owner === 'WCKDai' ? [repo('polykrom', { html_url: 'https://github.com/WCKDai/polykrom' })] : [repo('afterhours')]);
+    } });
+    assert.match(urls[0], /^https:\/\/api\.github\.com\/orgs\/WCKDai\/repos\?type=public&/);
+    assert.match(urls[1], /^https:\/\/api\.github\.com\/users\/wckdboy\/repos\?type=owner&/);
+    assert.deepEqual(value.owners, ['WCKDai', 'wckdboy']);
+    assert.deepEqual(value.repositories.map((r) => r.url), ['https://github.com/wckdboy/afterhours', 'https://github.com/WCKDai/polykrom']);
+    assert.throws(() => publicRepositories([repo('polykrom')], 'WCKDai'), /Unexpected repository URL/);
+    await assert.rejects(refresh({ destination, request: async (url) => Response.json(url.includes('/orgs/WCKDai/')
+      ? [repo('same', { html_url: 'https://github.com/WCKDai/same' })] : [repo('same')]) }), /two owners/);
+  } finally { await rm(directory, { recursive: true, force: true }); }
 });
 
 test('the built-link checker handles literal percent IDs and reports every missing anchor', async () => {
