@@ -31,7 +31,7 @@
 # Sigstore build attestation too.
 set -eu
 
-REPO="https://github.com/wckdboy/invincible"
+REPO="https://github.com/WCKDai/invincible"
 RELEASES="${INVINCIBLE_RELEASES:-$REPO/releases}"
 RELEASE_KEY="ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAII/0fXPq1j51BcfGY0Jp9QfPGy6kHVQQ+W282VFPR/Qo"
 
@@ -376,9 +376,13 @@ install_release() {
     say "downloading $archive"
     fetch "$BASE/$archive" "$CACHE/$archive" "$ARCHIVE_SHA"
     if [ "$LOOPBACK" = 0 ] && have gh && gh auth status >/dev/null 2>&1; then
-        gh attestation verify "$CACHE/$archive" --repo wckdboy/invincible >/dev/null \
+        # The repository moved from wckdboy to WCKDai on 2026-11-01. Releases built since are
+        # attested by WCKDai/invincible; earlier ones by wckdboy/invincible, whose attestations
+        # stay under the wckdboy account. Either way the signer must be this repository's workflow.
+        gh attestation verify "$CACHE/$archive" --repo WCKDai/invincible >/dev/null 2>&1 \
+            || gh attestation verify "$CACHE/$archive" --owner wckdboy --signer-repo wckdboy/invincible >/dev/null \
             || die "$archive: its build attestation does not verify; not installing it"
-        ok "build attestation verified (built by wckdboy/invincible's release workflow)"
+        ok "build attestation verified (built by Invincible's release workflow)"
     fi
     STAGE=$(mktemp -d "$BIN/.invincible-install.XXXXXX")
     tar -xzf "$CACHE/$archive" -C "$STAGE" || die "$archive does not unpack"
