@@ -8,7 +8,7 @@ import { resolve, extname, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { chromium } from 'playwright-core';
 
-const sharedKeys = ['autobot', 'invincible', 'sovware', 'wckd', 'omnie', 'omnie-dk', 'nightfall', 'tinyrex'];
+const sharedKeys = ['autobot', 'invincible', 'sovware', 'wckd', 'omnie', 'omnie-dk', 'nightfall', 'tinyrex', 'trigon'];
 const brandForSite = name => name === 'omnie-dk' ? 'omnie' : name;
 const sites = process.argv[2] ? JSON.parse(await readFile(process.argv[2], 'utf8'))
   : sharedKeys.map(name => ({

@@ -1,0 +1,172 @@
+---
+import Lab from '../layouts/Lab.astro';
+
+const REPO = 'https://github.com/WCKDai/trigon';
+const docs = (file: string) => `${REPO}/blob/main/docs/${file}`;
+
+// Facade schematic: five bays, a raised ground floor and four storeys above, drawn in viewBox units.
+const bays = [0, 1, 2, 3, 4];
+const storeys = [0, 1, 2, 3];
+const bayX = (i: number) => 64 + i * 96;
+const floorY = (s: number) => 300 - s * 62;
+
+const today = [
+  ['Site', 'Give an address: the outline, storeys, eaves height, year built and materials come from Danish public data (Dataforsyningen, GeoDanmark, BBR, the height model). OpenStreetMap fills in without a key.'],
+  ['Evidence', 'Oblique aerial photos are matched to the facades they show and straightened, with the model drawn over them, so you and the agent compare against the building itself. Scanned archive drawings register the same way.'],
+  ['Facades', 'A bay grid per facade. Slots take typed components: windows, doors, loggias, French balconies, cantilever and steel balconies. Every change is checked: it fits the wall and the storey, nothing overlaps, no openings in party walls.'],
+  ['Building', 'Storey-by-storey masonry walls (a Copenhagen preset included), pitched roofs by straight skeleton, plinths, basement walls, cellar stairs, interior walls, stairs and rooms.'],
+  ['Phases', 'Existing, new and demolished, Revit-style. Views and exports carry the phase, so a renovation proposal reads correctly in plans, 3D and IFC.'],
+  ['Drawings', 'Plans, elevations and sections drawn from the model, with exact hidden-line removal and hatched cuts, at standard scales. SVG, PNG, vector PDF and DXF.'],
+  ['Exchange', 'IFC4 as real building elements for Revit and Vectorworks, georeferenced; glTF 2.0 for 3D. IFC import is cross-checked with two independent readers.'],
+  ['History', 'Undo and redo for your changes and the agent’s alike, and a journal of every change saved in the .trigon file.'],
+];
+
+const status = [
+  ['Stage', 'early MVP', 'built and used on the owner’s own projects first; expect sharp edges and changing commands'],
+  ['Region', 'Denmark first', 'Danish registers, coordinates (EPSG:25832) and drawing conventions; OpenStreetMap elsewhere'],
+  ['Platforms', 'source build', 'desktop app for macOS and Windows planned; today you build it with Cargo'],
+  ['License', 'MIT OR Apache-2.0', 'two IFC readers linked unmodified under MPL-2.0; no GPL code is linked'],
+  ['Data', 'stays yours', 'fetched data keeps its own terms (SDFI, OpenStreetMap ODbL); the control channel listens on 127.0.0.1 only'],
+];
+---
+
+<Lab
+  path="/"
+  current="overview"
+  description="Free and open-source building modelling for existing and new buildings. Start from an address, lay out facades with parametric components, and export IFC4, drawings and glTF, by hand or through an AI agent over MCP."
+>
+  <p class="label">trigon.sh / architectural and civil BIM</p>
+  <h1>buildings from<br />numbers you<br />can read</h1>
+  <p class="lede">Trigon is free and open-source building modelling for existing and new buildings. Give it an address and it pulls the outline, heights and photos from public data. Then you, or an AI agent, lay out each facade with parametric windows, doors and balconies, and export IFC4, drawings and glTF.</p>
+
+  <div class="actions">
+    <a class="button button--primary" href={REPO} rel="noopener">Source on GitHub ↗</a>
+    <a class="text-link" href="#agent">How the agent works</a>
+    <a class="text-link" href="#start">Build it</a>
+  </div>
+
+  <figure class="trigon-figure">
+    <svg viewBox="0 0 600 400" role="img" aria-labelledby="trigon-fig-title" class="trigon-elevation">
+      <title id="trigon-fig-title">Schematic facade elevation: five bays over four storeys and a raised ground floor, one window highlighted as just changed by the agent</title>
+      <g class="ground"><line x1="20" y1="352" x2="580" y2="352" /></g>
+      <rect class="plinth" x="40" y="322" width="520" height="30" />
+      <polygon class="roof" points="40,58 300,18 560,58" />
+      <rect class="wall" x="40" y="58" width="520" height="264" />
+      {storeys.map((s) => <line class="floor" x1="40" x2="560" y1={floorY(s) - 2} y2={floorY(s) - 2} />)}
+      {storeys.map((s) => bays.map((b) => {
+        const x = bayX(b), y = floorY(s) - 52;
+        const lit = s === 2 && b === 3;
+        return (
+          <g class={lit ? 'win win--lit' : 'win'}>
+            <rect x={x} y={y} width="56" height="40" />
+            <line x1={x + 28} x2={x + 28} y1={y} y2={y + 40} />
+            <line x1={x} x2={x + 56} y1={y + 12} y2={y + 12} />
+          </g>
+        );
+      }))}
+      <g class="door"><rect x={bayX(2)} y="262" width="56" height="60" /><line x1={bayX(2) + 28} x2={bayX(2) + 28} y1="262" y2="322" /></g>
+      {[0, 1, 3, 4].map((b) => <g class="win"><rect x={bayX(b)} y="270" width="56" height="34" /><line x1={bayX(b) + 28} x2={bayX(b) + 28} y1="270" y2="304" /></g>)}
+      <g class="balcony"><rect x={bayX(1) - 10} y={floorY(1) - 4} width="76" height="6" /><line x1={bayX(1) - 10} x2={bayX(1) + 66} y1={floorY(1) - 26} y2={floorY(1) - 26} />{[0, 1, 2, 3, 4, 5, 6].map((i) => <line x1={bayX(1) - 10 + i * 12.6} x2={bayX(1) - 10 + i * 12.6} y1={floorY(1) - 26} y2={floorY(1) - 4} />)}</g>
+      <g class="levels">
+        <text x="568" y={floorY(0) + 2}>+0,00</text>
+        <text x="568" y={floorY(2) + 2}>+6,20</text>
+        <text x="568" y="62">eaves</text>
+      </g>
+      <g class="tag"><line x1={bayX(3) + 56} y1={floorY(2) - 32} x2="520" y2="96" /><text x="430" y="90">facade.place · casement_2</text></g>
+    </svg>
+    <figcaption>Schematic illustration, not a Trigon render. The highlighted window is what Studio shows when an agent’s command lands: the change glows for a few seconds.</figcaption>
+  </figure>
+
+  <dl class="facts">
+    <div><dt>Driven by</dt><dd>hand or MCP</dd></div>
+    <div><dt>Exports</dt><dd>IFC4 · DXF · PDF</dd></div>
+    <div><dt>Kernel</dt><dd>PolyCore (planned)</dd></div>
+  </dl>
+
+  <section id="agent">
+    <h2>The AI controls the tool. It never draws the building.</h2>
+    <p>An agent drives Trigon through the same commands a person uses: <span class="mono">site.load_address</span>, <span class="mono">facade.set_bays</span>, <span class="mono">facade.place</span>, <span class="mono">export.ifc</span>. Every wall, window and balcony is then built by deterministic, parametric code from numbers you can read and change. Nothing in the model is generated geometry, so nothing in it is a guess you cannot check.</p>
+    <p><strong>Trigon Studio</strong> is the desktop app where you build together and watch the agent work. Every command it runs lands in your window: in the activity feed, under the agent’s name with its parameters, result and duration, and in the model, where what changed glows for a few seconds. Undo applies to the agent’s changes as it does to yours. The agent can also look: it can show you a level or an element, and take a screenshot of what you see.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Step</th><th>Who</th><th>What happens</th></tr></thead>
+        <tbody>
+          <tr><td class="mono">site.load_address</td><td>agent</td><td>outline, storeys and heights from public registers</td></tr>
+          <tr><td class="mono">evidence.facade_image</td><td>agent</td><td>the facade straightened from an aerial photo, with the model drawn over it</td></tr>
+          <tr><td class="mono">facade.set_bays · facade.place</td><td>agent or you</td><td>the bay grid and its windows, doors and balconies, each change checked</td></tr>
+          <tr><td class="mono">⌘Z</td><td>you</td><td>undo anything, whoever did it</td></tr>
+          <tr><td class="mono">export.ifc · elevation.sheet</td><td>either</td><td>IFC4 for Revit and Vectorworks; drawings as PDF and DXF</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small">Works with Claude Code, Codex and any MCP client. The control channel listens on 127.0.0.1 only, with a new random token per launch in a file only you can read. <a href={docs('control-protocol.md')}>Control protocol ↗</a></p>
+  </section>
+
+  <section id="today">
+    <h2>What it does today</h2>
+    <div class="table-wrap">
+      <table>
+        <tbody>
+          {today.map(([area, what]) => (
+            <tr><td><strong>{area}</strong></td><td>{what}</td></tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    <p class="small">The full list, with every command, is in the <a href={`${REPO}#what-it-does-today`}>README</a>. IFC details: <a href={docs('ifc-export.md')}>IFC export ↗</a>. Editing: <a href={docs('editing.md')}>precise editing ↗</a>.</p>
+  </section>
+
+  <section id="kernel">
+    <h2>One kernel with Polykrom</h2>
+    <p>Trigon is built on the same stack as <a href="https://polykrom.app">Polykrom</a>, WCKD’s parametric CAD: Rust throughout, everything a command with a schema, and an MCP server over the same commands. The geometry kernel is to be <a href="https://polycore.dev">PolyCore</a>, the Rust kernel already under Polykrom, so a fix for one app is a fix for both.</p>
+    <p>Buildings push a kernel differently from machine parts. Trigon’s needs are filed as a proposal to PolyCore’s own process: building-scale coordinates with a local origin, sections and hidden-line projection in the kernel, an exact fast path for planar bodies, and many small instanced bodies. Today Trigon’s planar walls, openings and drawings run in its own crates; the move onto PolyCore follows that work.</p>
+    <p class="small"><a href={`${REPO}/blob/main/docs/planning/polycore-requirements.md`}>What Trigon needs from PolyCore ↗</a></p>
+  </section>
+
+  <section id="start">
+    <h2>Build it</h2>
+    <p>Trigon builds from source with a current Rust toolchain. Free keys from Dataforsyningen and Datafordeler unlock Danish heights and registers; without them, addresses come from OpenStreetMap.</p>
+    <pre class="trigon-code"><code>cargo build --release -p trigon-studio -p trigon
+./target/release/trigon-studio model.trigon
+
+# then let your agent drive the running Studio
+claude mcp add trigon -- ./target/release/trigon mcp</code></pre>
+  </section>
+
+  <section id="status">
+    <h2>Status</h2>
+    <div class="table-wrap">
+      <table>
+        <tbody>
+          {status.map(([part, state, note]) => (
+            <tr><td><strong>{part}</strong></td><td>{state}</td><td class="small">{note}</td></tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    <p class="small">Contains data from Styrelsen for Dataforsyning og Infrastruktur when you fetch it. No accounts.</p>
+  </section>
+</Lab>
+
+<style>
+  .trigon-figure { margin: 40px 0 8px; padding: 24px; border: 1px solid var(--rule); background: var(--wash, transparent); }
+  .trigon-elevation { display: block; width: 100%; height: auto; max-height: 420px; color: var(--ink, currentColor); }
+  .trigon-elevation :global(*) { vector-effect: non-scaling-stroke; }
+  .trigon-elevation .wall, .trigon-elevation .roof { fill: none; stroke: currentColor; stroke-width: 1.6; }
+  .trigon-elevation .plinth { fill: currentColor; fill-opacity: 0.06; stroke: currentColor; stroke-width: 1; }
+  .trigon-elevation .floor { stroke: currentColor; stroke-opacity: 0.25; stroke-dasharray: 4 4; }
+  .trigon-elevation .ground line { stroke: currentColor; stroke-width: 2.6; }
+  .trigon-elevation .win rect, .trigon-elevation .door rect { fill: currentColor; fill-opacity: 0.07; stroke: currentColor; stroke-width: 1; }
+  .trigon-elevation .win line, .trigon-elevation .door line, .trigon-elevation .balcony line { stroke: currentColor; stroke-width: 0.8; }
+  .trigon-elevation .balcony rect { fill: currentColor; }
+  .trigon-elevation .win--lit rect { fill: var(--mark); fill-opacity: 0.22; stroke: var(--mark); stroke-width: 2; }
+  .trigon-elevation .win--lit line { stroke: var(--mark); }
+  .trigon-elevation .levels text, .trigon-elevation .tag text { font: 10px var(--mono, ui-monospace, monospace); fill: currentColor; }
+  .trigon-elevation .levels text { text-anchor: start; fill-opacity: 0.7; }
+  .trigon-elevation .tag line { stroke: var(--mark); stroke-width: 1; }
+  .trigon-elevation .tag text { fill: var(--mark); }
+  .trigon-figure figcaption { margin-top: 14px; font-size: 12px; color: var(--muted); }
+  .trigon-code { overflow-x: auto; padding: 18px 20px; border: 1px solid var(--rule); font-size: 13px; line-height: 1.6; }
+  @media (prefers-color-scheme: dark) { .trigon-elevation { color: var(--bone, currentColor); } }
+  @media (max-width: 720px) { .trigon-figure { padding: 12px; } }
+</style>

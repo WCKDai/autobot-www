@@ -15,9 +15,9 @@ const DIST = resolve(ROOT, 'dist', KEY);
 const BRAND_KEY = KEY === 'omnie-dk' ? 'omnie' : KEY;
 
 // The touch icon is the brand's app icon from the kit (public/brand/<key>/icon.svg, brand/gen.py).
-const kitIcon = await readFile(resolve(ROOT, 'public', 'brand', BRAND_KEY in { wckd: 1, sovware: 1, autobot: 1, invincible: 1, omnie: 1, nightfall: 1, tinyrex: 1 } ? BRAND_KEY : 'autobot', 'icon.svg'), 'utf8');
+const kitIcon = await readFile(resolve(ROOT, 'public', 'brand', BRAND_KEY in { wckd: 1, sovware: 1, autobot: 1, invincible: 1, omnie: 1, nightfall: 1, tinyrex: 1, trigon: 1 } ? BRAND_KEY : 'autobot', 'icon.svg'), 'utf8');
 const iconSvg = kitIcon.replace(/width="1024" height="1024"/, 'width="180" height="180"');
-const ogSvg = await readFile(resolve(ROOT, 'public', 'brand', BRAND_KEY in { wckd: 1, sovware: 1, autobot: 1, invincible: 1, omnie: 1, nightfall: 1, tinyrex: 1 } ? BRAND_KEY : 'autobot', 'og.svg'));
+const ogSvg = await readFile(resolve(ROOT, 'public', 'brand', BRAND_KEY in { wckd: 1, sovware: 1, autobot: 1, invincible: 1, omnie: 1, nightfall: 1, tinyrex: 1, trigon: 1 } ? BRAND_KEY : 'autobot', 'og.svg'));
 
 try {
   await access(resolve(DIST, 'index.html'), constants.R_OK);

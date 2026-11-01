@@ -1,11 +1,11 @@
 # Working on the WCKD sites
 
-These sites (wckd.ai, sovware.io, autobot.sh, invincible.sh, omnie.sh, omnie.dk, nightfall.sh, tinyrex.sh) describe
+These sites (wckd.ai, sovware.io, autobot.sh, invincible.sh, omnie.sh, omnie.dk, nightfall.sh, tinyrex.sh, trigon.sh) describe
 the products; they must never lag them.
 
 ## When a project updates, update the sites, the README and Plane
 
-- A release or a change in Autobot, Invincible, Omnie or Nightfall updates its site in the same
+- A release or a change in Autobot, Invincible, Omnie, Nightfall, Tinyrex or Trigon updates its site in the same
   pass: `GITHUB_TOKEN=$(gh auth token) pnpm data && pnpm sync:install`, edit `src/views/` or
   `src/data/` for new status, features or limits, then `pnpm build:all`,
   `node scripts/check-links.mjs` and `npx wrangler deploy --config deploy/<site>.wrangler.jsonc`

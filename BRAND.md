@@ -47,6 +47,7 @@ version of the kit at `/brand/`; wckd.ai's home is the master kit.
 | Axit | axit.sh | File search and reviewed cleanup | `a` | copper `#B3633D` (light `#D9966B` on ink) |
 | OpenEndo | openendo.org | Open research | `o` | mauve `#A64D79` (light `#E4A1C3` on ink) |
 | Tinyrex | tinyrex.sh | Lab project | `t` | ochre `#A78020` (light `#E4C563` on ink) |
+| Trigon | trigon.sh | Building modelling (BIM) | `t` | rose `#E11D48` (light `#FB7185` on ink) |
 
 Each signal is one color identity with surface-specific shades: use `onPaper` on light surfaces
 and `onInk` on dark surfaces, as defined in `brand/kit.json`. Use the matching paper or ink

@@ -11,6 +11,7 @@ const ORIGIN = {
   'omnie-dk': 'https://omnie.dk',
   nightfall: 'https://nightfall.sh',
   tinyrex: 'https://tinyrex.sh',
+  trigon: 'https://trigon.sh',
 };
 
 if (!ORIGIN[KEY]) {

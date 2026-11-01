@@ -185,6 +185,15 @@
       "onPaper": "#A78020",
       "text": "#111111"
     },
+    "trigon": {
+      "name": "Trigon",
+      "domain": "trigon.sh",
+      "role": "Building modelling, driven by AI over MCP",
+      "glyph": ["..##..", "######", "..##..", "..##..", "..##..", "...###"],
+      "onInk": "#FB7185",
+      "onPaper": "#E11D48",
+      "text": "#111111"
+    },
     "axit": {
       "name": "Axit",
       "domain": "axit.sh",
