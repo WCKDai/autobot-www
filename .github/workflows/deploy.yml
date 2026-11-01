@@ -27,8 +27,9 @@ jobs:
     if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     env:
-      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      # Only whether Cloudflare is configured: the credentials reach the deploy step alone, never
+      # pnpm install (dependency scripts), the builds or the browser checks.
+      CLOUDFLARE_CONFIGURED: ${{ secrets.CLOUDFLARE_API_TOKEN != '' }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -59,44 +60,22 @@ jobs:
       - run: node scripts/tinyrex-browser.mjs
       - run: node scripts/family-browser.mjs
 
-      - name: Deploy autobot.sh
-        if: ${{ env.CLOUDFLARE_API_TOKEN != '' && github.event_name != 'pull_request' }}
-        run: npx --yes wrangler@4 deploy --config deploy/autobot.wrangler.jsonc
-
-      - name: Deploy invincible.sh
-        if: ${{ env.CLOUDFLARE_API_TOKEN != '' && github.event_name != 'pull_request' }}
-        run: npx --yes wrangler@4 deploy --config deploy/invincible.wrangler.jsonc
-
-      - name: Deploy sovware.io
-        if: ${{ env.CLOUDFLARE_API_TOKEN != '' && github.event_name != 'pull_request' }}
-        run: npx --yes wrangler@4 deploy --config deploy/sovware.wrangler.jsonc
-
-      - name: Deploy wckd.ai
-        if: ${{ env.CLOUDFLARE_API_TOKEN != '' && github.event_name != 'pull_request' }}
-        run: npx --yes wrangler@4 deploy --config deploy/wckd.wrangler.jsonc
-
-      - name: Deploy nightfall.sh
-        if: ${{ env.CLOUDFLARE_API_TOKEN != '' && github.event_name != 'pull_request' }}
-        run: npx --yes wrangler@4 deploy --config deploy/nightfall.wrangler.jsonc
-
-      - name: Deploy tinyrex.sh
-        if: ${{ env.CLOUDFLARE_API_TOKEN != '' && github.event_name != 'pull_request' }}
-        run: npx --yes wrangler@4 deploy --config deploy/tinyrex.wrangler.jsonc
-
-      - name: Deploy trigon.sh
-        if: ${{ env.CLOUDFLARE_API_TOKEN != '' && github.event_name != 'pull_request' }}
-        run: npx --yes wrangler@4 deploy --config deploy/trigon.wrangler.jsonc
-
-      - name: Deploy www redirects
-        if: ${{ env.CLOUDFLARE_API_TOKEN != '' && github.event_name != 'pull_request' }}
-        run: npx --yes wrangler@4 deploy --config deploy/www.wrangler.jsonc
-
-      - name: Deploy polycore.dev redirect
-        if: ${{ env.CLOUDFLARE_API_TOKEN != '' && github.event_name != 'pull_request' }}
-        run: npx --yes wrangler@4 deploy --config deploy/polycore.wrangler.jsonc
+      - name: Deploy the sites
+        if: ${{ env.CLOUDFLARE_CONFIGURED == 'true' && github.event_name != 'pull_request' }}
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        # autobot.sh, invincible.sh, sovware.io, wckd.ai, nightfall.sh, tinyrex.sh, trigon.sh, the www
+        # redirects and polycore.dev. Omnie stays a separate, explicit deploy.
+        run: |
+          for site in autobot invincible sovware wckd nightfall tinyrex trigon www polycore; do
+            echo "::group::$site"
+            npx --yes wrangler@4 deploy --config "deploy/$site.wrangler.jsonc"
+            echo "::endgroup::"
+          done
 
       - name: Cloudflare is not configured
-        if: ${{ env.CLOUDFLARE_API_TOKEN == '' }}
+        if: ${{ env.CLOUDFLARE_CONFIGURED != 'true' }}
         run: |
           echo "::warning::CLOUDFLARE_API_TOKEN / CLOUDFLARE_ACCOUNT_ID are not set; the sites were built but not deployed."
           echo "Add both repository secrets, or run pnpm deploy locally after 'npx wrangler login'."
