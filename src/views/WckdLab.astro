@@ -23,10 +23,10 @@ const repoUrls = new Map(source.repositories.map((r) => [r.name.toLowerCase(), r
 const repoUrl = (name: string) => repoUrls.get(name.toLowerCase());
 const sourceUrl = (p: { repo?: string; source?: string }) => p.source ?? (p.repo ? repoUrl(p.repo) : undefined);
 ---
-<Lab path="/" current="" description="Explore the WCKD projects: AI agents, CAD, creative apps, local tools and open research. Project sites, public source and development status in one place.">
-  <p class="label">WCKD.AI / independent software</p>
+<Lab path="/" current="" description="WCKD is the lab behind Autobot, Invincible, Polykrom, PolyCore, Trigon, Tinyrex and more: AI agents, CAD and BIM, robotics, creative apps and open research. Project sites, public source and status in one place.">
+  <p class="label">WCKD.AI / the lab</p>
   <h1>ideas, made<br />into tools</h1>
-  <p class="lede">AI agents, CAD, creative apps and open research. The projects from one lab: what they do, where to find them, and which ones are in development.</p>
+  <p class="lede">WCKD is the lab that builds every project here: AI agents, CAD and building modelling, robotics, creative apps and open research. What each one does, where to find it, and which ones are still in development.</p>
   <div class="actions">
     <a class="button button--primary" href="#projects">Explore the projects</a>
     <a class="text-link" href="#source">Public source</a>
@@ -59,6 +59,17 @@ const sourceUrl = (p: { repo?: string; source?: string }) => p.source ?? (p.repo
           <div class="project-links"><a href={p.site}>Visit {new URL(p.site).hostname} <span aria-hidden="true">↗</span></a>{sourceUrl(p) && <a href={sourceUrl(p)}>Source</a>}{'next' in p && p.next && <><a href={p.next.site}>Open {p.next.name} <span aria-hidden="true">↗</span></a><a href={p.next.source}>{p.next.name} source</a>{p.next.kernel && <a href={p.next.kernel.source}>{p.next.kernel.name} source</a>}</>}</div>
         </li>
       ))}
+    </ul>
+  </section>
+
+  <section id="foundations" aria-labelledby="foundations-title">
+    <h2 id="foundations-title">Built once, shared.</h2>
+    <p>The projects share their foundations, so work on one carries to the others.</p>
+    <ul class="small-projects">
+      <li><h3><a href="https://polycore.dev">PolyCore <span aria-hidden="true">↗</span></a></h3><p>One Rust geometry kernel: under Polykrom for parts and mechanisms today, and planned for Trigon for buildings.</p></li>
+      <li><h3><a href="https://creed.sh">Creed <span aria-hidden="true">↗</span></a></h3><p>One way of building: every agent in the lab works to the same engineering guide and checks.</p></li>
+      <li><h3><a href="/brand/">The brand kit</a></h3><p>One system: each project is a lowercase pixel letter and one colour.</p></li>
+      <li><h3><a href="https://github.com/WCKDai">WCKDai <span aria-hidden="true">↗</span></a></h3><p>The lab’s engineering organisation on GitHub: Polykrom, PolyCore, Trigon and Tinyrex.</p></li>
     </ul>
   </section>
 

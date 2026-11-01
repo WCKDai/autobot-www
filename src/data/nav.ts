@@ -34,7 +34,7 @@ export const NAV = {
       { label: 'Brand', href: '/brand/' },
       { label: 'GitHub', href: 'https://github.com/wckdboy' },
     ],
-    footer: 'WCKD is an independent lab. Software, experiments and open research.',
+    footer: 'WCKD is the independent lab behind every project here: software, robotics, experiments and open research.',
     repo: 'https://github.com/wckdboy',
   },
   sovware: {
@@ -73,7 +73,7 @@ export const NAV = {
     nav: [
       { label: 'Overview', href: '/' },
       { label: 'Polykrom', href: 'https://polykrom.app' },
-      { label: 'PolyCore', href: 'https://github.com/wckdboy/polycore' },
+      { label: 'PolyCore', href: 'https://github.com/WCKDai/polycore' },
       { label: 'Brand', href: '/brand/' },
       { label: 'Source', href: 'https://github.com/wckdboy/nightfall' },
       { label: 'WCKD', href: 'https://wckd.ai' },
@@ -93,5 +93,18 @@ export const NAV = {
     ],
     footer: 'Tinyrex / a WCKD robotics experiment inspired by Microduck and Open Duck Mini. Simplified browser lessons, not validated robot controllers.',
     repo: 'https://github.com/WCKDai/tinyrex',
+  },
+  trigon: {
+    nav: [
+      { label: 'Overview', href: '/' },
+      { label: 'Agent', href: '/#agent' },
+      { label: 'Today', href: '/#today' },
+      { label: 'Kernel', href: '/#kernel' },
+      { label: 'Start', href: '/#start' },
+      { label: 'Source', href: 'https://github.com/WCKDai/trigon' },
+      { label: 'WCKD', href: 'https://wckd.ai' },
+    ],
+    footer: 'Trigon / free and open-source building modelling. MIT OR Apache-2.0. Early MVP, Denmark first. Made by WCKD.',
+    repo: 'https://github.com/WCKDai/trigon',
   },
 } as const;

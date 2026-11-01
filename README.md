@@ -25,7 +25,7 @@ Independent sibling sites without this guide/manifest contract are explicitly re
 
 The public sites for the WCKD lab and its brands, built with Astro and a shared
 pixel brand kit. The repository builds `autobot`, `invincible`, `sovware`, `wckd`,
-`omnie`, `omnie-dk`, `nightfall` and `tinyrex` into separate `dist/<site>` directories. Niobium, Axit and
+`omnie`, `omnie-dk`, `nightfall`, `tinyrex` and `trigon` into separate `dist/<site>` directories. Niobium, Axit and
 Polykrom maintain their product sites in their own repositories.
 
 ## WCKD project directory
@@ -81,7 +81,7 @@ keyboard operation of the source catalog and first-party assets.
 Both PR workflows run all eight builds, link checks, catalog tests and browser
 checks. PRs do not deploy. CI on `main` can deploy Autobot, Invincible, Sovware and
 WCKD when the repository's Cloudflare secrets are configured; without them it
-reports a warning. Omnie, Nightfall and TinyRex have separate Wrangler configs for explicit
+reports a warning. Omnie, Nightfall, TinyRex and Trigon have separate Wrangler configs for explicit
 local deployments. Tinyrex is now a robotics learning lab: an original robot schematic, an
 18-joint explorer, a support-polygon playground, a gait/IK workbench and three short quizzes.
 Its models are explicitly simplified lessons, not validated robot controllers. Current design

@@ -20,7 +20,7 @@ for (const repo of snapshot.repositories) {
   names.add(repo.name.toLowerCase());
   assert(html.includes(`href="${repo.url}"`), `Repository absent from directory: ${repo.name}`);
 }
-assert.deepEqual(new Set(projects.map((p) => p.id)), new Set(['autobot','invincible','niobium','omnie','polykrom','polycore','creed','nightfall','axit','openendo','sovware']));
+assert.deepEqual(new Set(projects.map((p) => p.id)), new Set(['autobot','invincible','niobium','omnie','polykrom','polycore','trigon','tinyrex','creed','nightfall','axit','openendo','sovware']));
 for (const project of projects) {
   if (project.sourceStatus === 'not-published') {
     // An unpublished connector must not masquerade as its earlier public IDE repository.
@@ -37,7 +37,7 @@ for (const project of projects) {
   }
   assert.equal(new URL(project.site).protocol, 'https:');
 }
-for (const id of ['autobot', 'invincible', 'niobium', 'polykrom', 'polycore', 'creed', 'sovware']) {
+for (const id of ['autobot', 'invincible', 'niobium', 'polykrom', 'polycore', 'trigon', 'creed', 'sovware']) {
   const project = projects.find((p) => p.id === id);
   assert(project, `Missing core profile: ${id}`);
   assert(html.includes(`id="project-${id}"`) && html.includes(`href="${project.site}"`), `Core project absent from directory: ${id}`);

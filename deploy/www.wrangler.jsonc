@@ -6,6 +6,7 @@
     { "pattern": "www.autobot.sh", "custom_domain": true },
     { "pattern": "www.invincible.sh", "custom_domain": true },
     { "pattern": "www.sovware.io", "custom_domain": true },
-    { "pattern": "www.tinyrex.sh", "custom_domain": true }
+    { "pattern": "www.tinyrex.sh", "custom_domain": true },
+    { "pattern": "www.trigon.sh", "custom_domain": true }
   ]
 }

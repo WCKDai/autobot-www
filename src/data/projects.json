@@ -54,12 +54,34 @@
     "id": "polycore",
     "name": "PolyCore",
     "kind": "The 3D geometry kernel",
-    "description": "The current 3D-kernel project. Geometry development for Polykrom; Nightfall is archived research, not the active kernel.",
+    "description": "The Rust geometry kernel under Polykrom, and planned for Trigon: one kernel, so a fix for one app is a fix for both. Nightfall is archived research, not the active kernel.",
     "site": "https://polycore.dev",
     "repo": "polycore",
     "source": "https://github.com/WCKDai/PolyCore",
     "status": "In development · not production-ready",
     "brand": "polycore"
+  },
+  {
+    "id": "trigon",
+    "name": "Trigon",
+    "kind": "Building modelling (BIM)",
+    "description": "Free and open-source architectural and civil building modelling. Start from an address, lay out facades with parametric components, and export IFC4 and drawings, by hand or through an AI agent over MCP. Denmark first; built to run on PolyCore.",
+    "site": "https://trigon.sh",
+    "repo": "trigon",
+    "source": "https://github.com/WCKDai/trigon",
+    "status": "Early MVP · source builds",
+    "brand": "trigon"
+  },
+  {
+    "id": "tinyrex",
+    "name": "Tinyrex",
+    "kind": "Robotics, learned in the open",
+    "description": "An 18-joint bipedal T-rex design and a browser learning lab: explore joints, balance and leg kinematics with simplified models.",
+    "site": "https://tinyrex.sh",
+    "repo": "tinyrex",
+    "source": "https://github.com/WCKDai/tinyrex",
+    "status": "Prototype design · learning lab",
+    "brand": "tinyrex"
   },
   {
     "id": "creed",
@@ -81,7 +103,7 @@
     "repo": "nightfall",
     "status": "Archived · now Polykrom and PolyCore",
     "brand": "nightfall",
-    "next": { "name": "Polykrom", "site": "https://cad.polykrom.app", "source": "https://github.com/wckdboy/polykrom", "kernel": { "name": "PolyCore", "source": "https://github.com/wckdboy/polycore" } }
+    "next": { "name": "Polykrom", "site": "https://cad.polykrom.app", "source": "https://github.com/WCKDai/polykrom", "kernel": { "name": "PolyCore", "source": "https://github.com/WCKDai/polycore" } }
   },
   {
     "id": "axit",

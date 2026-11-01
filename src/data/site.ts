@@ -1,7 +1,7 @@
 import releaseData from './releases.json';
 import installData from './install.json';
 
-export type SiteKey = 'autobot' | 'invincible' | 'sovware' | 'wckd' | 'omnie' | 'omnie-dk' | 'nightfall' | 'tinyrex';
+export type SiteKey = 'autobot' | 'invincible' | 'sovware' | 'wckd' | 'omnie' | 'omnie-dk' | 'nightfall' | 'tinyrex' | 'trigon';
 
 export interface NavItem {
   label: string;
@@ -99,7 +99,7 @@ const configs: Record<SiteKey, SiteMeta> = {
   },
   wckd: {
     key: 'wckd', name: 'WCKD', wordmark: 'wckd', domain: 'wckd.ai', origin: 'https://wckd.ai',
-    title: 'WCKD — projects from the lab', description: 'AI agents, CAD, creative apps, local tools and open research. Explore Autobot, Invincible, Niobium, Omnie, Polykrom, Nightfall, Axit, OpenEndo and Sovware.',
+    title: 'WCKD — projects from the lab', description: 'The lab that builds the WCKD projects: AI agents, CAD and BIM, robotics, creative apps, local tools and open research. Explore Autobot, Invincible, Niobium, Omnie, Polykrom, PolyCore, Trigon, Tinyrex, Axit, OpenEndo and Sovware.',
     theme: 'paper', nav: [], other: 'autobot', repo: 'https://github.com/wckdboy', license: 'Apache-2.0 / MIT', tagline: 'One lab, one system.', og: '/og/sovware.png',
   },
   omnie: {
@@ -121,6 +121,11 @@ const configs: Record<SiteKey, SiteMeta> = {
     key: 'tinyrex', name: 'TinyRex', wordmark: 'tinyrex', domain: 'tinyrex.sh', origin: 'https://tinyrex.sh',
     title: 'Tinyrex — robotics learning lab', description: 'Learn robotics with Tinyrex, an 18-joint T-rex design inspired by Microduck and Open Duck Mini. Explore joints, balance and leg kinematics with simplified educational models.',
     theme: 'paper', nav: [], other: 'autobot', repo: 'https://github.com/WCKDai/tinyrex', license: 'Apache-2.0 / CC-BY-4.0', tagline: 'Learn robotics, one experiment at a time.', og: '/og.png',
+  },
+  trigon: {
+    key: 'trigon', name: 'Trigon', wordmark: 'trigon', domain: 'trigon.sh', origin: 'https://trigon.sh',
+    title: 'Trigon — open building modelling, driven by AI', description: 'Free and open-source BIM for existing and new buildings. Start from an address, lay out facades with parametric components, and export IFC4, drawings and glTF, by hand or through an AI agent over MCP. Denmark first.',
+    theme: 'paper', nav: [], other: 'wckd', repo: 'https://github.com/WCKDai/trigon', license: 'MIT OR Apache-2.0', tagline: 'Buildings from numbers you can read.', og: '/og.png',
   },
 };
 
