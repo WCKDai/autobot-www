@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-11-01T13:23:38.742Z",
+  "generatedAt": "2026-11-01T22:01:52.046Z",
   "autobot": {
     "name": "autobot",
     "description": "Private AI agent for Android and iOS that runs on the phone's NPU/GPU: chat, agent, image generation and voice, with opt-in cloud, redaction and privacy receipts.",
     "stars": 0,
     "forks": 0,
     "license": "Apache-2.0",
-    "pushed": "2026-10-31T16:56:10Z",
+    "pushed": "2026-11-01T17:35:11Z",
     "latest": {
       "tag": "v1.14.0",
       "name": "Autobot 1.14.0",
       "published": "2026-10-22T00:28:13Z",
-      "url": "https://github.com/wckdboy/autobot/releases/tag/v1.14.0",
+      "url": "https://github.com/WCKDai/autobot/releases/tag/v1.14.0",
       "prerelease": false,
       "body": "The DeepSeek Harness itself, running on your iPhone.\n\n## Harness tab (iOS)\n- **A Linux agent workspace on the phone.** The Harness tab boots Alpine Linux with Node inside the iSH-ARM64 emulator and runs the DeepSeek Harness's own web UI, served on the device. No server, no Mac, no jailbreak.\n- **Your key, once.** A DeepSeek provider with an API key in Autobot signs the harness's model calls; otherwise the harness asks for one and keeps it in its guest.\n- **The same privacy rules.** The guest runs only while a network mode allows a route out: Offline stops it. The audit log records that it is running and where its calls go.\n- **Guest shell and log.** A shell into the running guest (`apk add`, `npm i -g`, a look at `~/.dsh`) and a shareable harness log, from the tab's menu.\n- **It recovers.** A page that fails, a web process that dies or a server that stopped in the background is reloaded; after three failed loads it says so and waits for Reload.\n- Experimental: the first boot imports the 85 MB guest image, a warm boot takes about a minute, and the emulator is slow. iPhone and iPad only.\n\n## Licence\n- The iOS app now includes GPL-3.0 components (dsh-ios, iSH-ARM64), so the iOS build is distributed under GPL-3.0 as a combined work. Autobot's own code stays Apache-2.0, and so does the Android app. Settings › Licenses lists the notices.",
       "assets": [
@@ -19,25 +19,25 @@
           "name": "autobot-1.14.0-debug.apk",
           "size": 145435532,
           "downloads": 4,
-          "url": "https://github.com/wckdboy/autobot/releases/download/v1.14.0/autobot-1.14.0-debug.apk"
+          "url": "https://github.com/WCKDai/autobot/releases/download/v1.14.0/autobot-1.14.0-debug.apk"
         },
         {
           "name": "autobot-1.14.0-mapping.txt",
           "size": 114971815,
           "downloads": 0,
-          "url": "https://github.com/wckdboy/autobot/releases/download/v1.14.0/autobot-1.14.0-mapping.txt"
+          "url": "https://github.com/WCKDai/autobot/releases/download/v1.14.0/autobot-1.14.0-mapping.txt"
         },
         {
           "name": "autobot-1.14.0-release.apk",
           "size": 83665578,
-          "downloads": 12,
-          "url": "https://github.com/wckdboy/autobot/releases/download/v1.14.0/autobot-1.14.0-release.apk"
+          "downloads": 13,
+          "url": "https://github.com/WCKDai/autobot/releases/download/v1.14.0/autobot-1.14.0-release.apk"
         },
         {
           "name": "SHA256SUMS.txt",
           "size": 277,
-          "downloads": 147,
-          "url": "https://github.com/wckdboy/autobot/releases/download/v1.14.0/SHA256SUMS.txt"
+          "downloads": 171,
+          "url": "https://github.com/WCKDai/autobot/releases/download/v1.14.0/SHA256SUMS.txt"
         }
       ]
     },
@@ -46,7 +46,7 @@
         "tag": "v1.14.0",
         "name": "Autobot 1.14.0",
         "published": "2026-10-22T00:28:13Z",
-        "url": "https://github.com/wckdboy/autobot/releases/tag/v1.14.0",
+        "url": "https://github.com/WCKDai/autobot/releases/tag/v1.14.0",
         "prerelease": false,
         "body": "The DeepSeek Harness itself, running on your iPhone.\n\n## Harness tab (iOS)\n- **A Linux agent workspace on the phone.** The Harness tab boots Alpine Linux with Node inside the iSH-ARM64 emulator and runs the DeepSeek Harness's own web UI, served on the device. No server, no Mac, no jailbreak.\n- **Your key, once.** A DeepSeek provider with an API key in Autobot signs the harness's model calls; otherwise the harness asks for one and keeps it in its guest.\n- **The same privacy rules.** The guest runs only while a network mode allows a route out: Offline stops it. The audit log records that it is running and where its calls go.\n- **Guest shell and log.** A shell into the running guest (`apk add`, `npm i -g`, a look at `~/.dsh`) and a shareable harness log, from the tab's menu.\n- **It recovers.** A page that fails, a web process that dies or a server that stopped in the background is reloaded; after three failed loads it says so and waits for Reload.\n- Experimental: the first boot imports the 85 MB guest image, a warm boot takes about a minute, and the emulator is slow. iPhone and iPad only.\n\n## Licence\n- The iOS app now includes GPL-3.0 components (dsh-ios, iSH-ARM64), so the iOS build is distributed under GPL-3.0 as a combined work. Autobot's own code stays Apache-2.0, and so does the Android app. Settings › Licenses lists the notices.",
         "assets": [
@@ -54,25 +54,25 @@
             "name": "autobot-1.14.0-debug.apk",
             "size": 145435532,
             "downloads": 4,
-            "url": "https://github.com/wckdboy/autobot/releases/download/v1.14.0/autobot-1.14.0-debug.apk"
+            "url": "https://github.com/WCKDai/autobot/releases/download/v1.14.0/autobot-1.14.0-debug.apk"
           },
           {
             "name": "autobot-1.14.0-mapping.txt",
             "size": 114971815,
             "downloads": 0,
-            "url": "https://github.com/wckdboy/autobot/releases/download/v1.14.0/autobot-1.14.0-mapping.txt"
+            "url": "https://github.com/WCKDai/autobot/releases/download/v1.14.0/autobot-1.14.0-mapping.txt"
           },
           {
             "name": "autobot-1.14.0-release.apk",
             "size": 83665578,
-            "downloads": 12,
-            "url": "https://github.com/wckdboy/autobot/releases/download/v1.14.0/autobot-1.14.0-release.apk"
+            "downloads": 13,
+            "url": "https://github.com/WCKDai/autobot/releases/download/v1.14.0/autobot-1.14.0-release.apk"
           },
           {
             "name": "SHA256SUMS.txt",
             "size": 277,
-            "downloads": 147,
-            "url": "https://github.com/wckdboy/autobot/releases/download/v1.14.0/SHA256SUMS.txt"
+            "downloads": 171,
+            "url": "https://github.com/WCKDai/autobot/releases/download/v1.14.0/SHA256SUMS.txt"
           }
         ]
       },
@@ -80,7 +80,7 @@
         "tag": "v1.13.0",
         "name": "Autobot 1.13.0",
         "published": "2026-10-21T22:26:36Z",
-        "url": "https://github.com/wckdboy/autobot/releases/tag/v1.13.0",
+        "url": "https://github.com/WCKDai/autobot/releases/tag/v1.13.0",
         "prerelease": false,
         "body": "A native look on both phones, layouts that fit tablets, and forms the on-device agent can show you.\n\n## Native on each phone\n- **Android uses Material 3 Expressive** in Autobot's purple: standard top bars, lists, switches, chips and buttons, the new loading indicators and motion. Every screen moved, from Chat and Run to Image, Studio and the lock screen.\n- **iPhone and iPad use the system look with Liquid Glass**: system navigation bars and toolbars, grouped lists and forms, glass buttons, the purple tint.\n- The brand stays as the pixel a and the purple dot after a title. The old print-style controls are gone.\n\n## Layouts for every size\n- **Tablets and wide windows** get a navigation rail (Android) or a sidebar (iPad), and lists open their item beside them: chats, nodes, settings pages.\n- Back on a tablet goes one screen back instead of closing the app.\n- Text stays readable at the largest sizes: chips wrap, banners stack, nothing runs off the screen.\n\n## Generative UI (phone chats)\n- **The on-device agent can show a form, choices or a card** when that's quicker than text: pick a time, fill in a booking, tick options. Your answer goes back to the agent as your next message.\n- A sent form locks and shows \"Sent\"; what you entered is kept when you reopen the chat.\n- Images in a form load only when you tap them, through your network settings.\n- Turn it off in Settings › Agent › Generative UI.\n\n## Faster and steadier\n- Streaming answers draw about twice as fast on iPhone; Android starts with a fresh startup profile for the new screens.\n- A message you started typing is kept when you go back or switch chats.\n- Hidden fields (pairing codes, passwords) no longer feed keyboard suggestions.\n- Bigger tap targets for the small buttons (ⓘ, Copy code, Run now).",
         "assets": [
@@ -88,25 +88,25 @@
             "name": "autobot-1.13.0-debug.apk",
             "size": 145419500,
             "downloads": 1,
-            "url": "https://github.com/wckdboy/autobot/releases/download/v1.13.0/autobot-1.13.0-debug.apk"
+            "url": "https://github.com/WCKDai/autobot/releases/download/v1.13.0/autobot-1.13.0-debug.apk"
           },
           {
             "name": "autobot-1.13.0-mapping.txt",
             "size": 114971815,
             "downloads": 2,
-            "url": "https://github.com/wckdboy/autobot/releases/download/v1.13.0/autobot-1.13.0-mapping.txt"
+            "url": "https://github.com/WCKDai/autobot/releases/download/v1.13.0/autobot-1.13.0-mapping.txt"
           },
           {
             "name": "autobot-1.13.0-release.apk",
             "size": 83649326,
             "downloads": 3,
-            "url": "https://github.com/wckdboy/autobot/releases/download/v1.13.0/autobot-1.13.0-release.apk"
+            "url": "https://github.com/WCKDai/autobot/releases/download/v1.13.0/autobot-1.13.0-release.apk"
           },
           {
             "name": "SHA256SUMS.txt",
             "size": 277,
             "downloads": 4,
-            "url": "https://github.com/wckdboy/autobot/releases/download/v1.13.0/SHA256SUMS.txt"
+            "url": "https://github.com/WCKDai/autobot/releases/download/v1.13.0/SHA256SUMS.txt"
           }
         ]
       },
@@ -114,7 +114,7 @@
         "tag": "v1.12.0",
         "name": "Autobot 1.12.0",
         "published": "2026-10-20T12:06:20Z",
-        "url": "https://github.com/wckdboy/autobot/releases/tag/v1.12.0",
+        "url": "https://github.com/WCKDai/autobot/releases/tag/v1.12.0",
         "prerelease": false,
         "body": "Your node's bots on your phone, a first chat in three taps, and a chat that reads like the terminal.\n\n## Bots (Android and iOS)\n- **Remote › Agents · my node lists your node's bots.** Each row shows the name, persona, model, the channels it is on (telegram · slack), and what's wrong when a channel is down. The list refreshes each time you open the tab.\n- **A bot's page** shows its channels and their state, its model and approvals mode, the approvals waiting for it (you can answer them there), its recent sessions, an on/off switch, and **New chat with <bot>**.\n- The agent screen and approval cards say which bot is asking. \"While you were away\" gives one line per bot.\n- It needs Invincible 0.0.13 or newer. Older nodes keep today's single agent.\n\n## A first chat in three taps\n- **Start here** on Models picks one chat model that fits your phone. One button walks you through Download, Pause or Resume, then Start a chat.\n- Autobot starts offline, and the card says so in one sentence: \"Allow network and download\" turns it on for the download. Once the model is ready, you can turn offline mode back on with one tap.\n- **Pair a PC** and **Add an API key** on the welcome screen open what they say directly.\n\n## Chat (Android and iOS)\n- **Agent steps** read like the terminal: ▪ for each step, with what it did underneath. A failed step is red and says why.\n- **Answers** have Copy, Share and Read aloud. The last one has Retry.\n- **Long-press** on any message gives the same menu on both apps.\n\n## Smaller things\n- Models lists chat models first. Android shows NPU packages only on phones with a Snapdragon NPU.\n- Remote, the Privacy Center and Providers use the same words on both apps. Model names replace catalog ids.\n- The iOS tab bar now marks the active tab with a purple bar under its label, as on Android.",
         "assets": [
@@ -122,25 +122,25 @@
             "name": "autobot-1.12.0-debug.apk",
             "size": 139461937,
             "downloads": 10,
-            "url": "https://github.com/wckdboy/autobot/releases/download/v1.12.0/autobot-1.12.0-debug.apk"
+            "url": "https://github.com/WCKDai/autobot/releases/download/v1.12.0/autobot-1.12.0-debug.apk"
           },
           {
             "name": "autobot-1.12.0-mapping.txt",
             "size": 96737547,
             "downloads": 1,
-            "url": "https://github.com/wckdboy/autobot/releases/download/v1.12.0/autobot-1.12.0-mapping.txt"
+            "url": "https://github.com/WCKDai/autobot/releases/download/v1.12.0/autobot-1.12.0-mapping.txt"
           },
           {
             "name": "autobot-1.12.0-release.apk",
             "size": 82320466,
             "downloads": 6,
-            "url": "https://github.com/wckdboy/autobot/releases/download/v1.12.0/autobot-1.12.0-release.apk"
+            "url": "https://github.com/WCKDai/autobot/releases/download/v1.12.0/autobot-1.12.0-release.apk"
           },
           {
             "name": "SHA256SUMS.txt",
             "size": 277,
             "downloads": 29,
-            "url": "https://github.com/wckdboy/autobot/releases/download/v1.12.0/SHA256SUMS.txt"
+            "url": "https://github.com/WCKDai/autobot/releases/download/v1.12.0/SHA256SUMS.txt"
           }
         ]
       },
@@ -148,7 +148,7 @@
         "tag": "v1.11.1",
         "name": "Autobot 1.11.1",
         "published": "2026-10-20T08:54:50Z",
-        "url": "https://github.com/wckdboy/autobot/releases/tag/v1.11.1",
+        "url": "https://github.com/WCKDai/autobot/releases/tag/v1.11.1",
         "prerelease": false,
         "body": "See what your node did while you were away, and tell the agent what to do instead.\n\n## While you were away (Android and iOS)\n- **A card on the Run screen** sums up what your node did since you last looked: requests answered (and whether they all stayed on your node), actions it ran (and who allowed them), and recipes and schedules that ran.\n- **What needs you comes first.** \"2 approvals waiting\" opens the conversation they're in; team questions open the Board.\n- **Receipts are checked.** \"All 12 receipts verified\" in grey, or a red line first when one fails to verify.\n- Details opens the node's Activity, and ✕ dismisses the card. Nothing shows when nothing is new.\n\n## Something else (Android and iOS)\n- An approval card from your node has a quiet third answer: **Something else…** Type what the agent should do instead and it does that. It needs Invincible 0.0.12 or newer.\n\n## Smaller things\n- The theme follows your phone's setting by default. A theme you picked stays as it is.\n- Android's welcome screen has the two quiet links again: Pair a PC and Add an API key.",
         "assets": [
@@ -156,25 +156,25 @@
             "name": "autobot-1.11.1-debug.apk",
             "size": 139073721,
             "downloads": 1,
-            "url": "https://github.com/wckdboy/autobot/releases/download/v1.11.1/autobot-1.11.1-debug.apk"
+            "url": "https://github.com/WCKDai/autobot/releases/download/v1.11.1/autobot-1.11.1-debug.apk"
           },
           {
             "name": "autobot-1.11.1-mapping.txt",
             "size": 95408007,
             "downloads": 1,
-            "url": "https://github.com/wckdboy/autobot/releases/download/v1.11.1/autobot-1.11.1-mapping.txt"
+            "url": "https://github.com/WCKDai/autobot/releases/download/v1.11.1/autobot-1.11.1-mapping.txt"
           },
           {
             "name": "autobot-1.11.1-release.apk",
             "size": 82239298,
             "downloads": 1,
-            "url": "https://github.com/wckdboy/autobot/releases/download/v1.11.1/autobot-1.11.1-release.apk"
+            "url": "https://github.com/WCKDai/autobot/releases/download/v1.11.1/autobot-1.11.1-release.apk"
           },
           {
             "name": "SHA256SUMS.txt",
             "size": 277,
             "downloads": 6,
-            "url": "https://github.com/wckdboy/autobot/releases/download/v1.11.1/SHA256SUMS.txt"
+            "url": "https://github.com/WCKDai/autobot/releases/download/v1.11.1/SHA256SUMS.txt"
           }
         ]
       },
@@ -182,7 +182,7 @@
         "tag": "v1.11.0",
         "name": "Autobot 1.11.0",
         "published": "2026-10-20T06:56:51Z",
-        "url": "https://github.com/wckdboy/autobot/releases/tag/v1.11.0",
+        "url": "https://github.com/WCKDai/autobot/releases/tag/v1.11.0",
         "prerelease": false,
         "body": "A new look on both apps: the purple pixel a, calmer screens, and the node's team board on your phone.\n\n## A new look (Android and iOS)\n- **The icon is the purple pixel a** on white. The launch screen shows the same a.\n- **Calmer screens.** Titles and buttons are in sentence case; the main screens' titles end in a small purple square. Labels and buttons are no longer in capitals.\n- **One way to show what's selected.** Segments, chips and tabs show the choice in ink over a thin purple bar, everywhere.\n- **No more dot patterns.** Progress bars are flat, loaders are three pixels, and image previews are plain panels.\n- **Purple is rare.** It marks the a, the active tab, the switch you turned on and the main action of a screen. Links and code are in ink, and tags are neutral.\n- **Light mode looks as good as dark,** and the Image screen follows your theme instead of always being paper.\n- **The node keeps its orange i** on every screen about your node.\n- **Clearer empty screens:** the a, one sentence and one action.\n\n## Your node's team board (Android and iOS)\n- The Activity sheet has a **Board** tab with the team's plans and each task's state, and a count of the tasks waiting for you.\n- A blocked task shows the member's question, with a field to answer it from the phone.\n- Older nodes without a board show none.\n\n## Fixes\n- Session rows line up with the margin. Large text no longer overlaps the Run cards on iPhone, and segment labels no longer break mid-word on small Android phones.\n- On iPhone, \"1 providers\" now reads \"1 provider\".\n- A voice test that depended on timing is steady.",
         "assets": [
@@ -190,25 +190,25 @@
             "name": "autobot-1.11.0-debug.apk",
             "size": 138907045,
             "downloads": 1,
-            "url": "https://github.com/wckdboy/autobot/releases/download/v1.11.0/autobot-1.11.0-debug.apk"
+            "url": "https://github.com/WCKDai/autobot/releases/download/v1.11.0/autobot-1.11.0-debug.apk"
           },
           {
             "name": "autobot-1.11.0-mapping.txt",
             "size": 94837379,
             "downloads": 1,
-            "url": "https://github.com/wckdboy/autobot/releases/download/v1.11.0/autobot-1.11.0-mapping.txt"
+            "url": "https://github.com/WCKDai/autobot/releases/download/v1.11.0/autobot-1.11.0-mapping.txt"
           },
           {
             "name": "autobot-1.11.0-release.apk",
             "size": 82203978,
             "downloads": 3,
-            "url": "https://github.com/wckdboy/autobot/releases/download/v1.11.0/autobot-1.11.0-release.apk"
+            "url": "https://github.com/WCKDai/autobot/releases/download/v1.11.0/autobot-1.11.0-release.apk"
           },
           {
             "name": "SHA256SUMS.txt",
             "size": 277,
             "downloads": 7,
-            "url": "https://github.com/wckdboy/autobot/releases/download/v1.11.0/SHA256SUMS.txt"
+            "url": "https://github.com/WCKDai/autobot/releases/download/v1.11.0/SHA256SUMS.txt"
           }
         ]
       },
@@ -216,7 +216,7 @@
         "tag": "v1.10.0",
         "name": "Autobot 1.10.0",
         "published": "2026-10-19T14:29:36Z",
-        "url": "https://github.com/wckdboy/autobot/releases/tag/v1.10.0",
+        "url": "https://github.com/WCKDai/autobot/releases/tag/v1.10.0",
         "prerelease": false,
         "body": "My node on iPhone too, what your machine did at a glance, recipes that run on your node, and the team of agents your machine can now run.\n\n## My node on iOS\n- **Pair your computer** in Settings › Providers › + › My node (Invincible). Paste the code, or open the `invincible://pair` link from the camera.\n- **Chats, signed receipts and \"phone first, then my node\"** all work as on Android.\n- **The agent screen.** Remote › Agents · my node: tasks on that machine, approval cards, and scheduled tasks.\n\n## What your machine did (Android and iOS)\nThe list button on the agent screen opens the node's Activity, read from its own logs:\n- **Requests:** every request the node answered: who asked, which model, tokens, and whether anything left. Each receipt is checked against the key pinned at pairing.\n- **Actions:** what the agent ran, and who allowed it.\n- **Memory and skills:** what the agent remembered (you can make it forget), and your skills.\n\n## Recipes on your node\n- **Runs on** in the recipe editor: this phone, or your node.\n- **On the node,** a recipe runs on its schedule, always on and with no 8-minute limit, on the node's models, with only the recipe's tool groups (web included).\n- **Your time, wherever the node is.** \"07:00\" means 07:00 where the phone is.\n- **Results come back** as chats in the Recipes folder, with the node's signed receipts and a notification.\n\n## A team on your machine\n- **Team members.** When the node's agent has a team, each member's answer shows under its name.\n- **You know who's asking.** An approval says which member wants it (\"coder: Run a command?\").\n- **New approval cards** for web fetches and MCP tools.\n\n## Fixes\n- Several CI tests that depended on timing are steadier.",
         "assets": [
@@ -224,25 +224,25 @@
             "name": "autobot-1.10.0-debug.apk",
             "size": 138984250,
             "downloads": 1,
-            "url": "https://github.com/wckdboy/autobot/releases/download/v1.10.0/autobot-1.10.0-debug.apk"
+            "url": "https://github.com/WCKDai/autobot/releases/download/v1.10.0/autobot-1.10.0-debug.apk"
           },
           {
             "name": "autobot-1.10.0-mapping.txt",
             "size": 95368990,
             "downloads": 1,
-            "url": "https://github.com/wckdboy/autobot/releases/download/v1.10.0/autobot-1.10.0-mapping.txt"
+            "url": "https://github.com/WCKDai/autobot/releases/download/v1.10.0/autobot-1.10.0-mapping.txt"
           },
           {
             "name": "autobot-1.10.0-release.apk",
             "size": 82237698,
             "downloads": 16,
-            "url": "https://github.com/wckdboy/autobot/releases/download/v1.10.0/autobot-1.10.0-release.apk"
+            "url": "https://github.com/WCKDai/autobot/releases/download/v1.10.0/autobot-1.10.0-release.apk"
           },
           {
             "name": "SHA256SUMS.txt",
             "size": 277,
             "downloads": 19,
-            "url": "https://github.com/wckdboy/autobot/releases/download/v1.10.0/SHA256SUMS.txt"
+            "url": "https://github.com/WCKDai/autobot/releases/download/v1.10.0/SHA256SUMS.txt"
           }
         ]
       },
@@ -250,7 +250,7 @@
         "tag": "v1.9.0",
         "name": "Autobot 1.9.0",
         "published": "2026-10-18T22:59:14Z",
-        "url": "https://github.com/wckdboy/autobot/releases/tag/v1.9.0",
+        "url": "https://github.com/WCKDai/autobot/releases/tag/v1.9.0",
         "prerelease": false,
         "body": "Your own computer as Autobot's next tier: pair a machine running Invincible, chat with its models, hand its agent tasks you approve from the phone, and check what it signed.\n\n## My node (Android)\n- **Pair a computer.** Install Invincible on a desktop or VPS (`curl -fsSL https://raw.githubusercontent.com/wckdboy/invincible/main/install.sh | sh`), run `invincible pair`, and scan the code with the camera app (or paste it). Settings › Providers › My node (Invincible). No account, no relay: the phone and the node pin each other's keys (Noise).\n- **Chat with its models** like any provider. Connections follow the kill switch (offline refuses them; Tor and SOCKS5 carry them with remote DNS) and show in the Privacy Center's audit log.\n- **Signed receipts.** Every answer from the node is checked against the receipt key pinned when you paired: the receipt line says \"kept on studio ✓\" when nothing left the node, \"studio → 1 host\" when it used a cloud model (with the hosts, routes and what it redacted), or \"studio unverified\".\n- **Phone first, then my node.** With \"phone first\" on a node chat, this phone answers first and a weak answer goes to your node instead of a cloud model. The node is hardware you own, so a sensitive prompt may go there and \"Never\" allows it; these turns are marked private, so the node never sends them on to a cloud model.\n\n## The agent on your machine (Android)\n- **REMOTE › Agents · my node.** Give the Autobot Agent running on that machine a task: shell commands and file work, on its models. Every command, file write and read outside its working folder comes to the phone as a card first: Allow, Always (this conversation) or Deny.\n- **Scheduled tasks.** The calendar button lists what the agent runs on a schedule (next run, how the last one went), adds tasks (cron, @daily, every 30m) and removes them. Scheduled runs only do what you allowlisted.\n\n## Fixes\n- Node chats no longer show a REDACT chip: nothing is redacted for hardware you own.\n- The streaming check with a real node leaves room for thinking models.\n\niOS: the pairing and receipt code is shared and tested on CryptoKit; the iOS node connector comes next, so \"My node\" says \"not on iOS yet\".",
         "assets": [
@@ -258,25 +258,25 @@
             "name": "autobot-1.9.0-debug.apk",
             "size": 138747714,
             "downloads": 1,
-            "url": "https://github.com/wckdboy/autobot/releases/download/v1.9.0/autobot-1.9.0-debug.apk"
+            "url": "https://github.com/WCKDai/autobot/releases/download/v1.9.0/autobot-1.9.0-debug.apk"
           },
           {
             "name": "autobot-1.9.0-mapping.txt",
             "size": 94824102,
             "downloads": 1,
-            "url": "https://github.com/wckdboy/autobot/releases/download/v1.9.0/autobot-1.9.0-mapping.txt"
+            "url": "https://github.com/WCKDai/autobot/releases/download/v1.9.0/autobot-1.9.0-mapping.txt"
           },
           {
             "name": "autobot-1.9.0-release.apk",
             "size": 82185390,
             "downloads": 1,
-            "url": "https://github.com/wckdboy/autobot/releases/download/v1.9.0/autobot-1.9.0-release.apk"
+            "url": "https://github.com/WCKDai/autobot/releases/download/v1.9.0/autobot-1.9.0-release.apk"
           },
           {
             "name": "SHA256SUMS.txt",
             "size": 274,
             "downloads": 2,
-            "url": "https://github.com/wckdboy/autobot/releases/download/v1.9.0/SHA256SUMS.txt"
+            "url": "https://github.com/WCKDai/autobot/releases/download/v1.9.0/SHA256SUMS.txt"
           }
         ]
       },
@@ -284,7 +284,7 @@
         "tag": "v1.8.0",
         "name": "Autobot 1.8.0",
         "published": "2026-10-18T02:01:54Z",
-        "url": "https://github.com/wckdboy/autobot/releases/tag/v1.8.0",
+        "url": "https://github.com/WCKDai/autobot/releases/tag/v1.8.0",
         "prerelease": false,
         "body": "Images come out the shape you pick, a full-screen viewer, recipes that run on their own, phone-first answers and a panic PIN.\n\n## Images (both platforms)\n- **16:9 means 16:9.** Picking a wide or tall shape could still give a square: on-device models compiled for one size (Core ML on iOS, QNN on Android) quietly swapped your size for theirs. They now render their square and return your shape cut from it, and Tune says \"compiled for 1024² · other shapes are cut from the square\".\n- **The resolution is a pixel budget.** 16:9 at 1024 is about a million pixels in that shape (1368×768), so wide images keep the detail of the square. Every shape chip names the exact size it makes, and the picker remembers your choice instead of snapping back to 512.\n- Picking a model keeps your shape instead of resetting to its square. MNN sizes round to the nearest 64 instead of always down.\n- A server that sends back a square anyway is cut to your shape (Android) or named in a notice (iOS), and the gallery records the size it really got.\n- **Full-screen viewer.** Tap a result, a gallery image or an image in chat: pinch or double-tap to zoom, pan, swipe through the batch, swipe down to close. The info sheet shows the real pixel size and every setting used.\n- **Do more with an image:** use it for img2img (prompt and settings carried over, strength showing), inpaint, vary, reuse settings, same seed, upscale 4× (when an upscaler is installed), share, save, copy settings, favorite, delete.\n- The agent's `generate_image` takes an aspect ratio and keeps the shape when given one side.\n- img2img without an input image now says so instead of quietly running as text-to-image; Tune says when a model can't apply your LoRAs.\n\n## Recipes (both platforms)\n- **On-device agents on a schedule.** Settings → Recipes: a prompt, a schedule, a model and the tools it may use. Runs in the background on the phone (WorkManager on Android, background processing on iOS), once for a missed time, safe across daylight-saving changes.\n- A private notification opens the result chat after the app lock. While the phone is locked, iOS says \"Unlock to run <name>\". Recipe data is encrypted and goes with a wipe.\n\n## Phone first (both platforms)\n- **The phone answers first.** Off by default. Settings → Privacy → Phone first (ask / auto / never) and a chip per chat: in a cloud chat the installed on-device model answers, and",
         "assets": [
@@ -292,25 +292,25 @@
             "name": "autobot-1.8.0-debug.apk",
             "size": 132275579,
             "downloads": 1,
-            "url": "https://github.com/wckdboy/autobot/releases/download/v1.8.0/autobot-1.8.0-debug.apk"
+            "url": "https://github.com/WCKDai/autobot/releases/download/v1.8.0/autobot-1.8.0-debug.apk"
           },
           {
             "name": "autobot-1.8.0-mapping.txt",
             "size": 93409948,
             "downloads": 1,
-            "url": "https://github.com/wckdboy/autobot/releases/download/v1.8.0/autobot-1.8.0-mapping.txt"
+            "url": "https://github.com/WCKDai/autobot/releases/download/v1.8.0/autobot-1.8.0-mapping.txt"
           },
           {
             "name": "autobot-1.8.0-release.apk",
             "size": 82021896,
             "downloads": 2,
-            "url": "https://github.com/wckdboy/autobot/releases/download/v1.8.0/autobot-1.8.0-release.apk"
+            "url": "https://github.com/WCKDai/autobot/releases/download/v1.8.0/autobot-1.8.0-release.apk"
           },
           {
             "name": "SHA256SUMS.txt",
             "size": 274,
             "downloads": 2,
-            "url": "https://github.com/wckdboy/autobot/releases/download/v1.8.0/SHA256SUMS.txt"
+            "url": "https://github.com/WCKDai/autobot/releases/download/v1.8.0/SHA256SUMS.txt"
           }
         ]
       },
@@ -318,7 +318,7 @@
         "tag": "v1.7.1",
         "name": "Autobot 1.7.1",
         "published": "2026-10-17T23:01:07Z",
-        "url": "https://github.com/wckdboy/autobot/releases/tag/v1.7.1",
+        "url": "https://github.com/WCKDai/autobot/releases/tag/v1.7.1",
         "prerelease": false,
         "body": "Cleaner prints, a faster start, and dictation that keeps up: a polish release.\n\n## Cleaner ink (both platforms)\n- **No more doubled dots.** On Android, the paper behind the Image screen, chat, voice, Models, Gallery and the lock drew every dot twice, with a faint copy a few pixels off. Paper is one plate again.\n- **Prints land on their own dots.** When a result printed, its colour plate started half a dot away and read as a second grid. It now starts as a thin rim on the same dots and settles.\n- **Pictures print in where they show.** A wide image in a square chat thumbnail or a Studio chip no longer prints a stretched copy next to the cropped one.\n- One dot field per screen: the voice panel, the empty Models search and empty chat no longer stack a second field under the first, and image proofs sit on whole pixels.\n- iOS: a halftone preview always matches its own image. A new image could pick up an old image's dots.\n\n## Faster (both platforms)\n- **Android starts sooner.** The app now ships a Baseline Profile, so startup code runs precompiled even on a sideloaded install. On the emulator: 13–17% less time to the first real screen and about 20% less main-thread work.\n- **iOS starts sooner.** Fonts and device checks load in the background, about 90 ms earlier to the first frame in the simulator.\n- **Live dictation shows words sooner and more often.** Partial passes only encode the audio heard so far, 2–4× less work. Stopping usually has nothing left to transcribe.\n- **Faster draft-model checks.** Each speculative step costs less, a draft that failed to load is retried later, and a failed check carries on without the draft instead of ending the answer.\n- **Image model warm-up.** It loads again ahead of Generate after it was freed, switching models no longer loads both, and on Android it stays loaded while the Image screen is open.\n- Smoother lists: the iOS chat list scrolls with fewer hitches, and Android's Models list only redraws rows that changed. Catalog previews and parsed chat text have a memory limit on iOS.\n\n## Fixed\n- Read-aloud no longer cuts off the last words before the assistant uses a tool.\n- Talking over a spoken answer no longer triggers by itself when the voice resumes after a pause.\n- iOS: the last words you say before tapping stop are no longer lost from dictation.\n- A quick double tap on the mic starts one dictation, not two.\n- The Image scree",
         "assets": [
@@ -326,25 +326,25 @@
             "name": "autobot-1.7.1-debug.apk",
             "size": 129800483,
             "downloads": 1,
-            "url": "https://github.com/wckdboy/autobot/releases/download/v1.7.1/autobot-1.7.1-debug.apk"
+            "url": "https://github.com/WCKDai/autobot/releases/download/v1.7.1/autobot-1.7.1-debug.apk"
           },
           {
             "name": "autobot-1.7.1-mapping.txt",
             "size": 85701169,
             "downloads": 1,
-            "url": "https://github.com/wckdboy/autobot/releases/download/v1.7.1/autobot-1.7.1-mapping.txt"
+            "url": "https://github.com/WCKDai/autobot/releases/download/v1.7.1/autobot-1.7.1-mapping.txt"
           },
           {
             "name": "autobot-1.7.1-release.apk",
             "size": 81406272,
             "downloads": 4,
-            "url": "https://github.com/wckdboy/autobot/releases/download/v1.7.1/autobot-1.7.1-release.apk"
+            "url": "https://github.com/WCKDai/autobot/releases/download/v1.7.1/autobot-1.7.1-release.apk"
           },
           {
             "name": "SHA256SUMS.txt",
             "size": 274,
             "downloads": 1,
-            "url": "https://github.com/wckdboy/autobot/releases/download/v1.7.1/SHA256SUMS.txt"
+            "url": "https://github.com/WCKDai/autobot/releases/download/v1.7.1/SHA256SUMS.txt"
           }
         ]
       },
@@ -352,7 +352,7 @@
         "tag": "v1.7.0",
         "name": "Autobot 1.7.0",
         "published": "2026-10-17T18:23:15Z",
-        "url": "https://github.com/wckdboy/autobot/releases/tag/v1.7.0",
+        "url": "https://github.com/WCKDai/autobot/releases/tag/v1.7.0",
         "prerelease": false,
         "body": "Your words stay yours in the cloud, replies come faster on the device, voice answers while it thinks, and you can see what every model costs.\n\n## Redact before cloud (both platforms)\n- **Placeholders, not your data.** Before a chat goes to a cloud model, names, emails, phone numbers, addresses, card, IBAN and account numbers, and your memory facts become placeholders like `[PERSON_1]`. The answer comes back with your real words, put back on your phone.\n- **Tools still work.** The agent gets the real values back on the phone, so it can still write the email or fill in the file.\n- **On by default**, in Settings → Privacy & security. A `REDACT` chip turns it off for one chat. \"This phone\" and local servers are never redacted.\n- **On the receipt.** It shows what was hidden (\"2 names · 1 email\"), never the values. Code, links, dates and version numbers are left alone, so coding chats keep working.\n\n## Faster replies with a draft model (both platforms)\n- **A small model guesses, your model checks.** Install Qwen3 0.6B next to Qwen3 4B Instruct 2507, Llama 3.2 1B next to 3B, or Qwen2.5 Coder 0.5B next to the Coders. On a Mac GPU, code, lists and rewrites came 1.3–1.7× faster and long answers about 2×.\n- **Every word is still your model's.** Thinking budgets, tool calls and the stop button work as before. Short agent steps skip the draft, so they never get slower.\n- **Auto / On / Off in Compute.** Auto drafts only when the pair fits your memory comfortably, and pauses when drafting doesn't pay. The benchmark and the diagnostics report show the speedup and how many guesses were kept.\n- Qwen3.5 models don't use drafts: their memory can't take back wrong guesses cheaply. A draft from another model family is refused with a reason.\n\n## Voice that keeps up (both platforms)\n- **Your words as you speak.** Dictation shows settled words in ink, with the rest firming up as you go. Audio is never saved.\n- **Answers start out loud after the first sentence**, not after the whole reply. Code is skipped; numbers and abbreviations are read whole.\n- **Just talk to interrupt.** In hands-free mode, speaking over an answer stops it, keeps your first words and listens.\n- Stopping dictation is faster: the last pass starts right away.\n\n## Usage, counted on your phone (both platforms)\n- **Settings › Usage:** tokens, requests and cost for today, this week and this month, a bar per day, and a",
         "assets": [
@@ -360,25 +360,25 @@
             "name": "autobot-1.7.0-debug.apk",
             "size": 129758759,
             "downloads": 1,
-            "url": "https://github.com/wckdboy/autobot/releases/download/v1.7.0/autobot-1.7.0-debug.apk"
+            "url": "https://github.com/WCKDai/autobot/releases/download/v1.7.0/autobot-1.7.0-debug.apk"
           },
           {
             "name": "autobot-1.7.0-mapping.txt",
             "size": 87851878,
             "downloads": 1,
-            "url": "https://github.com/wckdboy/autobot/releases/download/v1.7.0/autobot-1.7.0-mapping.txt"
+            "url": "https://github.com/WCKDai/autobot/releases/download/v1.7.0/autobot-1.7.0-mapping.txt"
           },
           {
             "name": "autobot-1.7.0-release.apk",
             "size": 80998466,
             "downloads": 2,
-            "url": "https://github.com/wckdboy/autobot/releases/download/v1.7.0/autobot-1.7.0-release.apk"
+            "url": "https://github.com/WCKDai/autobot/releases/download/v1.7.0/autobot-1.7.0-release.apk"
           },
           {
             "name": "SHA256SUMS.txt",
             "size": 274,
             "downloads": 1,
-            "url": "https://github.com/wckdboy/autobot/releases/download/v1.7.0/SHA256SUMS.txt"
+            "url": "https://github.com/WCKDai/autobot/releases/download/v1.7.0/SHA256SUMS.txt"
           }
         ]
       },
@@ -386,7 +386,7 @@
         "tag": "v1.6.6",
         "name": "Autobot 1.6.6",
         "published": "2026-10-16T22:30:57Z",
-        "url": "https://github.com/wckdboy/autobot/releases/tag/v1.6.6",
+        "url": "https://github.com/WCKDai/autobot/releases/tag/v1.6.6",
         "prerelease": false,
         "body": "Faster and smarter on-device chat: a real thinking switch with a budget, the NPU reads your prompt while the CPU writes the answer, proper formatting in answers, and a lighter Run screen.\n\n## Thinking you control (both platforms)\n- **A real switch.** The `∴ think` chip above the composer cycles Auto / On / Off; long-press for a budget (256 to 4k tokens). It's remembered per chat, with optional per-model defaults. Thinking is turned off through the model's own chat template, not a prompt the model can ignore.\n- **A budget the engine enforces.** When thinking reaches its budget, the engine wraps up and the model answers. Part of the output is always reserved for the answer, and a loop guard ends thinking that goes in circles.\n- **Auto is sensible.** Small models (under 4B) skip thinking in quick chat, which is faster and, on 0.8B models, also more accurate. Agent and code modes think within a budget. Subagents and summaries never think.\n- **Before and after:** Qwen3.5 0.8B used to think about 2,000 tokens and never answer. Now it answers in 25 ms with thinking off, 1 s with a 128-token budget, and 3.3 s on Auto in agent mode.\n- **Cloud providers** get their real reasoning control (OpenAI, Claude, OpenRouter, Qwen, DeepSeek, Z.ai, Groq, Gemini, vLLM, llama.cpp server). Auto leaves each provider's default alone.\n\n## NPU reads, CPU writes (Android, Snapdragon)\n- A new **npu+cpu** setup: the Hexagon NPU reads your prompt, then the CPU writes the reply. On a OnePlus 15 with Qwen3.5 0.8B: prompts read at about 2,500 tok/s (CPU about 100), and replies are written at about 50 tok/s (NPU alone about 40). A long agent prompt that took 10–20 s to read now takes under a second.\n- Auto now ranks engines by a typical turn (about 1,000 prompt tokens + 200 generated), so it picks npu+cpu where that's fastest. If memory is short, it falls back to the NPU alone.\n- The Compute screen shows all five engines. An on-device bench (`engine/llama/bench/android.sh`) is included for anyone measuring their own phone.\n\n## Formatted answers (both platforms)\n- Answers render headings, **bold**, *italic*, lists (nested and checkboxes), quotes, tables, code blocks with copy, and links.\n- **Still private:** nothing in a message can make a network request. Images show as text (\"[image: alt · host]\"), HTML stays literal, and links ask before opening in your browser, with a warning for plain http",
         "assets": [
@@ -394,25 +394,25 @@
             "name": "autobot-1.6.6-debug.apk",
             "size": 128911179,
             "downloads": 1,
-            "url": "https://github.com/wckdboy/autobot/releases/download/v1.6.6/autobot-1.6.6-debug.apk"
+            "url": "https://github.com/WCKDai/autobot/releases/download/v1.6.6/autobot-1.6.6-debug.apk"
           },
           {
             "name": "autobot-1.6.6-mapping.txt",
             "size": 85251777,
             "downloads": 1,
-            "url": "https://github.com/wckdboy/autobot/releases/download/v1.6.6/autobot-1.6.6-mapping.txt"
+            "url": "https://github.com/WCKDai/autobot/releases/download/v1.6.6/autobot-1.6.6-mapping.txt"
           },
           {
             "name": "autobot-1.6.6-release.apk",
             "size": 80771054,
             "downloads": 1,
-            "url": "https://github.com/wckdboy/autobot/releases/download/v1.6.6/autobot-1.6.6-release.apk"
+            "url": "https://github.com/WCKDai/autobot/releases/download/v1.6.6/autobot-1.6.6-release.apk"
           },
           {
             "name": "SHA256SUMS.txt",
             "size": 274,
             "downloads": 1,
-            "url": "https://github.com/wckdboy/autobot/releases/download/v1.6.6/SHA256SUMS.txt"
+            "url": "https://github.com/WCKDai/autobot/releases/download/v1.6.6/SHA256SUMS.txt"
           }
         ]
       },
@@ -420,7 +420,7 @@
         "tag": "v1.6.5",
         "name": "Autobot 1.6.5",
         "published": "2026-10-16T20:50:41Z",
-        "url": "https://github.com/wckdboy/autobot/releases/tag/v1.6.5",
+        "url": "https://github.com/WCKDai/autobot/releases/tag/v1.6.5",
         "prerelease": false,
         "body": "Clear Settings and a new About screen, honest engine labels, the right image defaults, and smoother screens. Tuned on a real OnePlus 15.\n\n## Settings and About (both platforms)\n- **Settings is laid out in one clear order:** Privacy & security › Agent › Appearance › Data › About. Every setting has exactly one home. Providers, image backends and accounts live in Remote, and Panic wipe lives only in Settings.\n- **About** shows your version, build number and build date, and this release's \"What's new\". The notes are built into the app, so they work offline. \"All releases\" and \"Source code\" open in your browser. It also has licenses, the privacy statement (\"No analytics. No telemetry. Network only where you allow it.\") and Copy diagnostics.\n- **Android:** About shows the release signing certificate and checks it against the APK you're running, so you can verify your install is genuine.\n\n## Labels you can trust\n- Route tags show the engine actually doing the work.\n  - Android: NPU, GPU or CPU, for images and for chat (from what the engine reports).\n  - iPhone: Neural Engine or GPU for images, GPU (Metal) for chat.\n- \"CPU\" no longer appears for models running elsewhere.\n\n## Better image defaults\n- Picking a model applies its recommended steps, guidance, sampler and size, without overriding anything you changed. Illustrious DMD2 now opens at 8 steps and 1024² instead of 20 steps at 512². SDXL models never default to 512².\n\n## Cleaner screens\n- **Run:** the status line fits, the card grid is aligned, the image art is clean, subtitles wrap instead of cutting off, and an empty \"Recent runs\" is hidden.\n- **Models:** the phone header fits; installed rows read like \"image · NPU · 4.5 GB\".\n- No halftone dots behind text or numbers anywhere.\n- **iPhone:** nothing is cut off on the iPhone 17e or at extra-large text, and the 17e shows its chip name.\n\n## Smoother\n- **Android:** halftone fields are drawn as batched dots. On the OnePlus 15, Imagine's dropped frames halved (22% → 11%), and slow frames went from 42 ms to 16 ms (p90).\n- **iPhone:** screens hidden under the Studio stop animating (stutters 3–6 → 0). Studio Library reloads thumbnails 4× less often while scrolling, and Imagine at rest uses half the main-thread time.\n\n## Measured on a OnePlus 15 (Snapdragon 8 Elite Gen 5)\n- Qwen3.5 0.8B: CPU 49 tok/s generation, NPU 576 tok/s prompt reading. After the Compute benchmark,",
         "assets": [
@@ -428,25 +428,25 @@
             "name": "autobot-1.6.5-debug.apk",
             "size": 128589211,
             "downloads": 1,
-            "url": "https://github.com/wckdboy/autobot/releases/download/v1.6.5/autobot-1.6.5-debug.apk"
+            "url": "https://github.com/WCKDai/autobot/releases/download/v1.6.5/autobot-1.6.5-debug.apk"
           },
           {
             "name": "autobot-1.6.5-mapping.txt",
             "size": 84031767,
             "downloads": 1,
-            "url": "https://github.com/wckdboy/autobot/releases/download/v1.6.5/autobot-1.6.5-mapping.txt"
+            "url": "https://github.com/WCKDai/autobot/releases/download/v1.6.5/autobot-1.6.5-mapping.txt"
           },
           {
             "name": "autobot-1.6.5-release.apk",
             "size": 80680070,
             "downloads": 1,
-            "url": "https://github.com/wckdboy/autobot/releases/download/v1.6.5/autobot-1.6.5-release.apk"
+            "url": "https://github.com/WCKDai/autobot/releases/download/v1.6.5/autobot-1.6.5-release.apk"
           },
           {
             "name": "SHA256SUMS.txt",
             "size": 274,
             "downloads": 1,
-            "url": "https://github.com/wckdboy/autobot/releases/download/v1.6.5/SHA256SUMS.txt"
+            "url": "https://github.com/WCKDai/autobot/releases/download/v1.6.5/SHA256SUMS.txt"
           }
         ]
       },
@@ -454,7 +454,7 @@
         "tag": "v1.6.4",
         "name": "Autobot 1.6.4",
         "published": "2026-10-16T19:20:50Z",
-        "url": "https://github.com/wckdboy/autobot/releases/tag/v1.6.4",
+        "url": "https://github.com/WCKDai/autobot/releases/tag/v1.6.4",
         "prerelease": false,
         "body": "A calmer Android app: much less text, fewer taps, and the same Settings layout as iPhone.\n\n## Less text, fewer taps (Android)\n- **Settings** is grouped into Connections / Agent / Appearance / Security / Data / About. Rows show their state on the right (providers \"1\", Privacy \"Direct\", Vault \"Off\") instead of a subtitle. Explanations are behind ⓘ.\n- **Chat with a downloaded model: 2 taps instead of 3.** A new chat opens with the keyboard up. Tapping Chat again reuses an empty chat instead of piling up \"New chat\" rows.\n- **Generate an image: 2 taps instead of 3.** The prompt is focused, and the Generate bar now sits above the keyboard instead of under it.\n- **Shorter everywhere.** Chat rows show the model's name (\"Qwen3.5 0.8B\") and \"just now\". Model rows drop licence and footnote text, and download progress shows once, in the panel. Remote, Privacy Center, Vault, Imagine and Studio lose their paragraphs: one short line and one button where something needs doing.\n\n## Look\n- Living cards match iPhone exactly: a fixed 320 dp wave at 0.45 rad, period 12 s. Every dot stays visible at the wave's low point.\n- Run screen cards fade their dots under the title and model name, so the text stays legible.\n\n## Files\n- `autobot-1.6.4-release.apk`: signed release (`ai.wckd.autobot`, arm64-v8a, Android 14+). Signer certificate SHA-256 `9a1378acf9587885e7920355558c85a1ec0e89304f58c153feebf90fdee7f3f1`.\n- `autobot-1.6.4-debug.apk`\n- `autobot-1.6.4-mapping.txt`: R8 mapping, for reading crash reports\n- `SHA256SUMS.txt`\n\niOS: TestFlight build 1.6.4 (no iOS changes since 1.6.3).",
         "assets": [
@@ -462,25 +462,25 @@
             "name": "autobot-1.6.4-debug.apk",
             "size": 128444362,
             "downloads": 1,
-            "url": "https://github.com/wckdboy/autobot/releases/download/v1.6.4/autobot-1.6.4-debug.apk"
+            "url": "https://github.com/WCKDai/autobot/releases/download/v1.6.4/autobot-1.6.4-debug.apk"
           },
           {
             "name": "autobot-1.6.4-mapping.txt",
             "size": 83580776,
             "downloads": 1,
-            "url": "https://github.com/wckdboy/autobot/releases/download/v1.6.4/autobot-1.6.4-mapping.txt"
+            "url": "https://github.com/WCKDai/autobot/releases/download/v1.6.4/autobot-1.6.4-mapping.txt"
           },
           {
             "name": "autobot-1.6.4-release.apk",
             "size": 80648781,
             "downloads": 1,
-            "url": "https://github.com/wckdboy/autobot/releases/download/v1.6.4/autobot-1.6.4-release.apk"
+            "url": "https://github.com/WCKDai/autobot/releases/download/v1.6.4/autobot-1.6.4-release.apk"
           },
           {
             "name": "SHA256SUMS.txt",
             "size": 274,
             "downloads": 1,
-            "url": "https://github.com/wckdboy/autobot/releases/download/v1.6.4/SHA256SUMS.txt"
+            "url": "https://github.com/WCKDai/autobot/releases/download/v1.6.4/SHA256SUMS.txt"
           }
         ]
       },
@@ -488,7 +488,7 @@
         "tag": "v1.6.3",
         "name": "Autobot 1.6.3",
         "published": "2026-10-16T18:55:22Z",
-        "url": "https://github.com/wckdboy/autobot/releases/tag/v1.6.3",
+        "url": "https://github.com/WCKDai/autobot/releases/tag/v1.6.3",
         "prerelease": false,
         "body": "On-device chat is fixed and much faster: no more failures every other turn, follow-up replies start almost at once, and Stop takes effect immediately.\n\n## Fixed (both platforms)\n- **The default on-device chat models failed every other turn.** Qwen3.5 0.8B, 2B and 4B use recurrent layers whose memory can't be rewound to an arbitrary point. The engine ignored that, so every second message ended in \"DECODE_FAILED\", and the next one re-read the whole conversation. The engine now keeps snapshots of that memory (after the system prompt, and near the end of each prompt) and resumes from the newest usable one. Replies are identical to a fresh run.\n\n## Faster\n- **Follow-up replies start in well under a second.** The conversation already processed is reused, so the model reads only your new message. On a Mac GPU with a 3,000-token agent prompt, the second turn now starts in about 0.1 s instead of failing or re-reading for 1–2 s. On CPU, 5–8 s per turn becomes 0.1–0.5 s.\n- **New chats with the same agent reuse its system prompt and tools**, so the first reply comes sooner too.\n- **The model loads when you open a chat**, while you type, instead of when you press Send. It holds off while an image, audio or dictation job runs.\n- **Text appears sooner:** tokens are shown as soon as they're sampled, and the first words up to two tokens earlier.\n\n## Stop means stop\n- Stop while the model reads your prompt now takes effect in milliseconds (it could take over 7 s on CPU).\n- Stop during model loading cancels the load.\n- Android: a Stop pressed while a reply was waiting or loading could be lost, so the phone generated a full answer for nobody. A finished reply's Stop could also cancel the next one. Each reply is now stopped on its own.\n\n## Files\n- `autobot-1.6.3-release.apk`: signed release (`ai.wckd.autobot`, arm64-v8a, Android 14+). Signer certificate SHA-256 `9a1378acf9587885e7920355558c85a1ec0e89304f58c153feebf90fdee7f3f1`.\n- `autobot-1.6.3-debug.apk`\n- `autobot-1.6.3-mapping.txt`: R8 mapping, for reading crash reports\n- `SHA256SUMS.txt`\n\niOS: TestFlight build 1.6.3.",
         "assets": [
@@ -496,31 +496,31 @@
             "name": "autobot-1.6.3-debug.apk",
             "size": 128424126,
             "downloads": 1,
-            "url": "https://github.com/wckdboy/autobot/releases/download/v1.6.3/autobot-1.6.3-debug.apk"
+            "url": "https://github.com/WCKDai/autobot/releases/download/v1.6.3/autobot-1.6.3-debug.apk"
           },
           {
             "name": "autobot-1.6.3-mapping.txt",
             "size": 83418233,
             "downloads": 1,
-            "url": "https://github.com/wckdboy/autobot/releases/download/v1.6.3/autobot-1.6.3-mapping.txt"
+            "url": "https://github.com/WCKDai/autobot/releases/download/v1.6.3/autobot-1.6.3-mapping.txt"
           },
           {
             "name": "autobot-1.6.3-release.apk",
             "size": 80645505,
             "downloads": 2,
-            "url": "https://github.com/wckdboy/autobot/releases/download/v1.6.3/autobot-1.6.3-release.apk"
+            "url": "https://github.com/WCKDai/autobot/releases/download/v1.6.3/autobot-1.6.3-release.apk"
           },
           {
             "name": "SHA256SUMS.txt",
             "size": 274,
             "downloads": 1,
-            "url": "https://github.com/wckdboy/autobot/releases/download/v1.6.3/SHA256SUMS.txt"
+            "url": "https://github.com/WCKDai/autobot/releases/download/v1.6.3/SHA256SUMS.txt"
           }
         ]
       }
     ],
     "checksums": "27783c50bc79a7fe605bd9d2ffcc2ca4c369d181d11c7fe6c3c6613630066e98 *autobot-1.14.0-debug.apk\n7c2113e62d9ab369429f5763c33b25f7cbaf9ed3a54032ffac5ea32bcd2043bd *autobot-1.14.0-release.apk\n1cff2386af2be28a8330b9d0444fd58493e4692a9dc3fb72f7d9955b41291c71 *autobot-1.14.0-mapping.txt",
-    "totalDownloads": 317
+    "totalDownloads": 342
   },
   "invincible": {
     "name": "invincible",
@@ -528,12 +528,12 @@
     "stars": 0,
     "forks": 0,
     "license": "MIT",
-    "pushed": "2026-10-31T20:14:01Z",
+    "pushed": "2026-11-01T15:43:07Z",
     "latest": {
       "tag": "v0.0.33",
       "name": "v0.0.33",
       "published": "2026-10-29T17:35:31Z",
-      "url": "https://github.com/wckdboy/invincible/releases/tag/v0.0.33",
+      "url": "https://github.com/WCKDai/invincible/releases/tag/v0.0.33",
       "prerelease": false,
       "body": "## What's Changed\n* Bound rent calls and keep the audit if the client leaves by @wckdboy in https://github.com/wckdboy/invincible/pull/30\n\n\n**Full Changelog**: https://github.com/wckdboy/invincible/compare/v0.0.32...v0.0.33",
       "assets": [
@@ -541,84 +541,84 @@
           "name": "invincible-linux-arm64.tar.gz",
           "size": 12354975,
           "downloads": 1,
-          "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.33/invincible-linux-arm64.tar.gz"
+          "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.33/invincible-linux-arm64.tar.gz"
         },
         {
           "name": "invincible-linux-x64.tar.gz",
           "size": 13523993,
           "downloads": 3,
-          "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.33/invincible-linux-x64.tar.gz"
+          "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.33/invincible-linux-x64.tar.gz"
         },
         {
           "name": "invincible-macos-arm64.tar.gz",
           "size": 11866506,
           "downloads": 1,
-          "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.33/invincible-macos-arm64.tar.gz"
+          "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.33/invincible-macos-arm64.tar.gz"
         },
         {
           "name": "SHA256SUMS",
           "size": 360,
-          "downloads": 34,
-          "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.33/SHA256SUMS"
+          "downloads": 59,
+          "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.33/SHA256SUMS"
         },
         {
           "name": "SHA256SUMS.sig",
           "size": 314,
-          "downloads": 4,
-          "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.33/SHA256SUMS.sig"
+          "downloads": 5,
+          "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.33/SHA256SUMS.sig"
         },
         {
           "name": "VERSION",
           "size": 7,
-          "downloads": 3,
-          "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.33/VERSION"
+          "downloads": 4,
+          "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.33/VERSION"
         }
       ]
     },
     "releases": [
       {
         "tag": "edge",
-        "name": "edge (0.0.33-edge.f098fb7)",
+        "name": "edge (0.0.33-edge.7a84dc7)",
         "published": "2026-10-20T10:17:13Z",
-        "url": "https://github.com/wckdboy/invincible/releases/tag/edge",
+        "url": "https://github.com/WCKDai/invincible/releases/tag/edge",
         "prerelease": true,
-        "body": "Built from f098fb78698bb14cacfefbbd850f7318bbc4ade3 on main after CI passed. Not a release: `curl -fsSL https://invincible.sh/install.sh | sh -s -- --channel edge` or `invincible update --channel edge` installs it.",
+        "body": "Built from 7a84dc7cdfbee657c9b9a72a49dfd312a47526db on main after CI passed. Not a release: `curl -fsSL https://invincible.sh/install.sh | sh -s -- --channel edge` or `invincible update --channel edge` installs it.",
         "assets": [
           {
             "name": "invincible-linux-arm64.tar.gz",
-            "size": 13149052,
+            "size": 13149006,
             "downloads": 0,
-            "url": "https://github.com/wckdboy/invincible/releases/download/edge/invincible-linux-arm64.tar.gz"
+            "url": "https://github.com/WCKDai/invincible/releases/download/edge/invincible-linux-arm64.tar.gz"
           },
           {
             "name": "invincible-linux-x64.tar.gz",
-            "size": 14400099,
+            "size": 14400103,
             "downloads": 0,
-            "url": "https://github.com/wckdboy/invincible/releases/download/edge/invincible-linux-x64.tar.gz"
+            "url": "https://github.com/WCKDai/invincible/releases/download/edge/invincible-linux-x64.tar.gz"
           },
           {
             "name": "invincible-macos-arm64.tar.gz",
-            "size": 12650456,
+            "size": 12650455,
             "downloads": 0,
-            "url": "https://github.com/wckdboy/invincible/releases/download/edge/invincible-macos-arm64.tar.gz"
+            "url": "https://github.com/WCKDai/invincible/releases/download/edge/invincible-macos-arm64.tar.gz"
           },
           {
             "name": "SHA256SUMS",
             "size": 360,
             "downloads": 0,
-            "url": "https://github.com/wckdboy/invincible/releases/download/edge/SHA256SUMS"
+            "url": "https://github.com/WCKDai/invincible/releases/download/edge/SHA256SUMS"
           },
           {
             "name": "SHA256SUMS.sig",
             "size": 314,
             "downloads": 0,
-            "url": "https://github.com/wckdboy/invincible/releases/download/edge/SHA256SUMS.sig"
+            "url": "https://github.com/WCKDai/invincible/releases/download/edge/SHA256SUMS.sig"
           },
           {
             "name": "VERSION",
             "size": 20,
             "downloads": 0,
-            "url": "https://github.com/wckdboy/invincible/releases/download/edge/VERSION"
+            "url": "https://github.com/WCKDai/invincible/releases/download/edge/VERSION"
           }
         ]
       },
@@ -626,7 +626,7 @@
         "tag": "v0.0.33",
         "name": "v0.0.33",
         "published": "2026-10-29T17:35:31Z",
-        "url": "https://github.com/wckdboy/invincible/releases/tag/v0.0.33",
+        "url": "https://github.com/WCKDai/invincible/releases/tag/v0.0.33",
         "prerelease": false,
         "body": "## What's Changed\n* Bound rent calls and keep the audit if the client leaves by @wckdboy in https://github.com/wckdboy/invincible/pull/30\n\n\n**Full Changelog**: https://github.com/wckdboy/invincible/compare/v0.0.32...v0.0.33",
         "assets": [
@@ -634,37 +634,37 @@
             "name": "invincible-linux-arm64.tar.gz",
             "size": 12354975,
             "downloads": 1,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.33/invincible-linux-arm64.tar.gz"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.33/invincible-linux-arm64.tar.gz"
           },
           {
             "name": "invincible-linux-x64.tar.gz",
             "size": 13523993,
             "downloads": 3,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.33/invincible-linux-x64.tar.gz"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.33/invincible-linux-x64.tar.gz"
           },
           {
             "name": "invincible-macos-arm64.tar.gz",
             "size": 11866506,
             "downloads": 1,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.33/invincible-macos-arm64.tar.gz"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.33/invincible-macos-arm64.tar.gz"
           },
           {
             "name": "SHA256SUMS",
             "size": 360,
-            "downloads": 34,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.33/SHA256SUMS"
+            "downloads": 59,
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.33/SHA256SUMS"
           },
           {
             "name": "SHA256SUMS.sig",
             "size": 314,
-            "downloads": 4,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.33/SHA256SUMS.sig"
+            "downloads": 5,
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.33/SHA256SUMS.sig"
           },
           {
             "name": "VERSION",
             "size": 7,
-            "downloads": 3,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.33/VERSION"
+            "downloads": 4,
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.33/VERSION"
           }
         ]
       },
@@ -672,7 +672,7 @@
         "tag": "v0.0.32",
         "name": "v0.0.32",
         "published": "2026-10-29T17:02:55Z",
-        "url": "https://github.com/wckdboy/invincible/releases/tag/v0.0.32",
+        "url": "https://github.com/WCKDai/invincible/releases/tag/v0.0.32",
         "prerelease": false,
         "body": "## What's Changed\n* Rent cloud GPUs through a supervised wckd serve by @wckdboy in https://github.com/wckdboy/invincible/pull/29\n\n\n**Full Changelog**: https://github.com/wckdboy/invincible/compare/v0.0.31...v0.0.32",
         "assets": [
@@ -680,37 +680,37 @@
             "name": "invincible-linux-arm64.tar.gz",
             "size": 12339124,
             "downloads": 1,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.32/invincible-linux-arm64.tar.gz"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.32/invincible-linux-arm64.tar.gz"
           },
           {
             "name": "invincible-linux-x64.tar.gz",
             "size": 13506554,
             "downloads": 3,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.32/invincible-linux-x64.tar.gz"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.32/invincible-linux-x64.tar.gz"
           },
           {
             "name": "invincible-macos-arm64.tar.gz",
             "size": 11848868,
             "downloads": 1,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.32/invincible-macos-arm64.tar.gz"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.32/invincible-macos-arm64.tar.gz"
           },
           {
             "name": "SHA256SUMS",
             "size": 360,
             "downloads": 1,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.32/SHA256SUMS"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.32/SHA256SUMS"
           },
           {
             "name": "SHA256SUMS.sig",
             "size": 314,
             "downloads": 1,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.32/SHA256SUMS.sig"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.32/SHA256SUMS.sig"
           },
           {
             "name": "VERSION",
             "size": 7,
             "downloads": 1,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.32/VERSION"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.32/VERSION"
           }
         ]
       },
@@ -718,7 +718,7 @@
         "tag": "v0.0.31",
         "name": "v0.0.31",
         "published": "2026-10-29T14:29:10Z",
-        "url": "https://github.com/wckdboy/invincible/releases/tag/v0.0.31",
+        "url": "https://github.com/WCKDai/invincible/releases/tag/v0.0.31",
         "prerelease": false,
         "body": "Invincible 0.0.31 — a patch release for the provider admin.\n\n- A gateway started before any `config.toml` exists can add its first provider: the admin reads an\n  absent config as the empty config instead of failing, then writes the config and key.\n- The early-404 body-limit test is deterministic: it sends HTTP headers with a declared 33 MiB\n  body over a raw socket, rather than racing a real 33 MiB upload against the refusal. This\n  removes the known intermittent failure in a full workspace run.\n\nNo API or UI changes. 728 workspace tests pass twice; clippy is clean. Alpha and the Mac run\n0.0.31; panel 0.1.5.",
         "assets": [
@@ -726,37 +726,37 @@
             "name": "invincible-linux-arm64.tar.gz",
             "size": 12215212,
             "downloads": 1,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.31/invincible-linux-arm64.tar.gz"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.31/invincible-linux-arm64.tar.gz"
           },
           {
             "name": "invincible-linux-x64.tar.gz",
             "size": 13383101,
             "downloads": 6,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.31/invincible-linux-x64.tar.gz"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.31/invincible-linux-x64.tar.gz"
           },
           {
             "name": "invincible-macos-arm64.tar.gz",
             "size": 11749585,
             "downloads": 2,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.31/invincible-macos-arm64.tar.gz"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.31/invincible-macos-arm64.tar.gz"
           },
           {
             "name": "SHA256SUMS",
             "size": 360,
             "downloads": 5,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.31/SHA256SUMS"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.31/SHA256SUMS"
           },
           {
             "name": "SHA256SUMS.sig",
             "size": 314,
             "downloads": 3,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.31/SHA256SUMS.sig"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.31/SHA256SUMS.sig"
           },
           {
             "name": "VERSION",
             "size": 7,
             "downloads": 3,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.31/VERSION"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.31/VERSION"
           }
         ]
       },
@@ -764,7 +764,7 @@
         "tag": "v0.0.30",
         "name": "v0.0.30",
         "published": "2026-10-29T11:52:23Z",
-        "url": "https://github.com/wckdboy/invincible/releases/tag/v0.0.30",
+        "url": "https://github.com/WCKDai/invincible/releases/tag/v0.0.30",
         "prerelease": false,
         "body": "Invincible 0.0.30 — add providers from the panel, no restart.\n\n## Gateway provider admin\n\nThe gateway now has a real provider admin API:\n\n- `GET /v1/admin/providers` lists the cloud backends without their keys, with key source\n  (`set`, `environment`, `missing`) and live status.\n- `POST /v1/admin/providers` adds or updates one: id, preset or custom base URL, upstream model,\n  context, data policy, vision and an optional API key.\n- `DELETE /v1/admin/providers/{id}` removes one and its key file.\n\nA change is written to the gateway's `config.toml` and key directory and **hot-loaded**: a request\nalready in flight keeps the model it chose; the next request sees the new list. No gateway restart.\n\nKeys are written once to `keys/<id>` (mode 0600) and never returned. An existing\n`api_key_env` provider (the alpha's LiteLLM backend) keeps its environment source when its model\nor context is updated. The panel's **Providers** page now has a preset form and a configured\nprovider table with edit/remove instead of the node command; the key crosses the browser once and\nis never shown again.\n\n## The container keeps what you add\n\nThe gateway image used to regenerate `config.toml` from `CLOUD_*` on every start, which would\nhave discarded panel additions. It now keeps an existing config across restarts. Set\n`INVINCIBLE_CONFIG_FORCE=1` on the service to regenerate the seeded config when the environment\nshould win.\n\n## Verified\n\n- 728 workspace tests pass; clippy is clean.\n- Provider API tests: add → `/v1/models` contains it immediately; update keeps the key; remove\n  deletes the key and the model; an `api_key_env` provider survives an update; no response\n  contains the key.\n- The panel flow was driven against a live gateway: add `acme` (custom endpoint), see it in the\n  model list, edit the model, remove it; the key file was mode 0600 and the config clean after\n  removal.",
         "assets": [
@@ -772,37 +772,37 @@
             "name": "invincible-linux-arm64.tar.gz",
             "size": 12222633,
             "downloads": 3,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.30/invincible-linux-arm64.tar.gz"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.30/invincible-linux-arm64.tar.gz"
           },
           {
             "name": "invincible-linux-x64.tar.gz",
             "size": 13380802,
             "downloads": 5,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.30/invincible-linux-x64.tar.gz"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.30/invincible-linux-x64.tar.gz"
           },
           {
             "name": "invincible-macos-arm64.tar.gz",
             "size": 11751087,
             "downloads": 2,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.30/invincible-macos-arm64.tar.gz"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.30/invincible-macos-arm64.tar.gz"
           },
           {
             "name": "SHA256SUMS",
             "size": 360,
             "downloads": 5,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.30/SHA256SUMS"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.30/SHA256SUMS"
           },
           {
             "name": "SHA256SUMS.sig",
             "size": 314,
             "downloads": 3,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.30/SHA256SUMS.sig"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.30/SHA256SUMS.sig"
           },
           {
             "name": "VERSION",
             "size": 7,
             "downloads": 3,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.30/VERSION"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.30/VERSION"
           }
         ]
       },
@@ -810,7 +810,7 @@
         "tag": "v0.0.29",
         "name": "v0.0.29",
         "published": "2026-10-29T04:46:00Z",
-        "url": "https://github.com/wckdboy/invincible/releases/tag/v0.0.29",
+        "url": "https://github.com/WCKDai/invincible/releases/tag/v0.0.29",
         "prerelease": false,
         "body": "Invincible 0.0.29 — a harness with project memory, and adapters that run.\n\n## Adapters you can run, not just detect\n\nCodex, Claude Code, OpenCode, Cursor Agent, Hermes and Pi are now executable behind one protocol.\nAn adapter runs only on request, in a thread's worktree, with the CLI's own account:\n\n- its login is checked first where the CLI has a status command;\n- the environment is rebuilt from a short allowlist, so this node's gateway, provider, GitHub\n  and Autobot tokens are never inherited;\n- the task is one argument, never a shell; one run per worktree is allowed;\n- output streams line by line (`adapter.started`, `adapter.output`, `adapter.finished`), and the\n  panel shows it live.\n\nThe CLI talks to its own provider, so Invincible cannot receipt those model calls; the panel and\nthe API say so. The run's answer is its stdout and stderr.\n\n## Delegated runs survive a usage limit\n\nA delegated task that meets a long provider usage limit is no longer lost. It is saved in\n`$AUTOBOT_HOME/delegations.json` with its conversation, scope and retry time, and `autobot serve`\nresumes it in the same conversation and worktree, without a client, up to five automatic resumes.\nA restart turns running jobs back into paused jobs and tries them again. The panel's\n**Delegations** page shows the queue, the resume count and the retry time, and can resume or cancel\na paused run. A newer request in one conversation replaces an older paused one.\n\n## A project brief for large repositories\n\nThe owner's standing context — stack, architecture, commands, conventions, invariants, traps —\nis stored per canonical project root, so every thread worktree of a repository shares it even\nbefore it is committed. It is capped at 64 KiB, carried in the system prompt of every step, and\nedited from the panel's **Project** page. The repository's `AGENTS.md` and its siblings are still\nread; the brief is additional, owner-authored context.\n\n## The plan is state, not a message\n\nThe `todo` tool now writes the latest plan to `$AUTOBOT_HOME/sessions/<id>.plan.json`. The plan is\ncarried in the system prompt on every step, so it survives compaction, a restart and a resumed\ndelegated run; the panel shows it above the conversation with a done count. Resetting a\nconversation clears it; forking copies it.\n\n## Verification\n\n- `cargo test --workspace`: 726 passed; `cargo clippy --workspace --all-targets -D warnin",
         "assets": [
@@ -818,37 +818,37 @@
             "name": "invincible-linux-arm64.tar.gz",
             "size": 12186456,
             "downloads": 1,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.29/invincible-linux-arm64.tar.gz"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.29/invincible-linux-arm64.tar.gz"
           },
           {
             "name": "invincible-linux-x64.tar.gz",
             "size": 13336526,
             "downloads": 3,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.29/invincible-linux-x64.tar.gz"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.29/invincible-linux-x64.tar.gz"
           },
           {
             "name": "invincible-macos-arm64.tar.gz",
             "size": 11707907,
             "downloads": 2,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.29/invincible-macos-arm64.tar.gz"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.29/invincible-macos-arm64.tar.gz"
           },
           {
             "name": "SHA256SUMS",
             "size": 360,
             "downloads": 11,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.29/SHA256SUMS"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.29/SHA256SUMS"
           },
           {
             "name": "SHA256SUMS.sig",
             "size": 314,
             "downloads": 4,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.29/SHA256SUMS.sig"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.29/SHA256SUMS.sig"
           },
           {
             "name": "VERSION",
             "size": 7,
             "downloads": 3,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.29/VERSION"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.29/VERSION"
           }
         ]
       },
@@ -856,7 +856,7 @@
         "tag": "v0.0.28",
         "name": "v0.0.28",
         "published": "2026-10-29T04:29:07Z",
-        "url": "https://github.com/wckdboy/invincible/releases/tag/v0.0.28",
+        "url": "https://github.com/WCKDai/invincible/releases/tag/v0.0.28",
         "prerelease": false,
         "body": "Invincible 0.0.28 — adapter runtime and persistent delegated resume.\n\n- The adapter registry runs Codex, Claude Code, OpenCode, Cursor Agent, Hermes and Pi behind one\n  protocol, in a thread's worktree, with its own account, a scrubbed environment, a login check\n  and streamed output. Invincible does not receipt the CLI's own model calls.\n- A delegated run that meets a long usage limit is saved in\n  `$AUTOBOT_HOME/delegations.json` and resumed by `autobot serve` at its retry time, in the same\n  conversation and worktree, up to five times; a restart recovers running jobs. The panel gains a\n  **Delegations** page to resume or cancel a paused run.\n\nThe project brief and persisted plan follow in 0.0.29.",
         "assets": [
@@ -864,37 +864,37 @@
             "name": "invincible-linux-arm64.tar.gz",
             "size": 12148928,
             "downloads": 1,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.28/invincible-linux-arm64.tar.gz"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.28/invincible-linux-arm64.tar.gz"
           },
           {
             "name": "invincible-linux-x64.tar.gz",
             "size": 13294851,
             "downloads": 1,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.28/invincible-linux-x64.tar.gz"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.28/invincible-linux-x64.tar.gz"
           },
           {
             "name": "invincible-macos-arm64.tar.gz",
             "size": 11668292,
             "downloads": 1,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.28/invincible-macos-arm64.tar.gz"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.28/invincible-macos-arm64.tar.gz"
           },
           {
             "name": "SHA256SUMS",
             "size": 360,
             "downloads": 2,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.28/SHA256SUMS"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.28/SHA256SUMS"
           },
           {
             "name": "SHA256SUMS.sig",
             "size": 314,
             "downloads": 2,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.28/SHA256SUMS.sig"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.28/SHA256SUMS.sig"
           },
           {
             "name": "VERSION",
             "size": 7,
             "downloads": 2,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.28/VERSION"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.28/VERSION"
           }
         ]
       },
@@ -902,7 +902,7 @@
         "tag": "v0.0.27",
         "name": "v0.0.27",
         "published": "2026-10-29T03:14:31Z",
-        "url": "https://github.com/wckdboy/invincible/releases/tag/v0.0.27",
+        "url": "https://github.com/WCKDai/invincible/releases/tag/v0.0.27",
         "prerelease": false,
         "body": "Invincible 0.0.27 — a control surface, and a harness that checks its work.\n\n## The panel is now a real control surface\n\n- A persistent sidebar, clear page hierarchy, responsive tables and forms, and a **command palette**\n  (`⌘ K`) for navigation and actions.\n- **Overview:** gateway and agent health, tasks, today's tokens and cost, the monthly subscription\n  total and next renewal, approvals, and recent conversations.\n- **Chat:** a conversation rail, the transcript, a composer, and **Keep going**. The session id,\n  saved state, tools, receipts and delegated events stay in one place.\n- **Agents:** bots, models, approvals, channels, add/enable/disable.\n- **Providers:** the gateway models and this agent's model, plus every external coding CLI\n  detected on the machine (`codex`, `claude`, `opencode`, `cursor-agent`, `hermes`, `pi`) with\n  version, path, auth kind and login hint. Provider keys stay in the gateway; the page shows the\n  node-side command for adding a gateway provider.\n- **Secrets:** every secret file in the agent's home, with kind, size and update time; add or\n  rotate one (write-only, mode 0600), or remove one. Values are never returned.\n- **Variables:** non-secret context added to every turn (`project.name`, `deploy.host`, …), with\n  description and update time.\n- **Subscriptions:** a ledger of plans, providers, status, monthly cost and currency, renewal date\n  and seats, with totals per currency and the next 30 days' renewals.\n- **Integrations:** the channel matrix, MCP servers and incoming webhook guidance.\n- **Usage:** tokens, cost, models, tools, failures and the gateway audit.\n- **Settings:** model, approvals, tool groups, workdir/sandbox, the verification check, and any\n  advanced dotted key.\n\nAssets carry a content hash, so a deploy is visible immediately through the CDN.\n\n## The harness checks its work\n\nSet `[agent] check = \"cargo test\"` (or `make check`, `npm test`). A turn that changed files runs\nthat command before it may finish:\n\n- a failure goes back to the model as a user message with the output;\n- after one retry the turn stops with the failure in the answer instead of claiming success;\n- the command is trusted because the owner wrote it, runs where commands run (the worktree, the\n  container or the SSH machine), and has at least ten minutes.\n\nThis is the deterministic half of “run the build, linter and tests and fix what you broke.",
         "assets": [
@@ -910,37 +910,37 @@
             "name": "invincible-linux-arm64.tar.gz",
             "size": 12026777,
             "downloads": 3,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.27/invincible-linux-arm64.tar.gz"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.27/invincible-linux-arm64.tar.gz"
           },
           {
             "name": "invincible-linux-x64.tar.gz",
             "size": 13170144,
             "downloads": 19,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.27/invincible-linux-x64.tar.gz"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.27/invincible-linux-x64.tar.gz"
           },
           {
             "name": "invincible-macos-arm64.tar.gz",
             "size": 11547741,
             "downloads": 3,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.27/invincible-macos-arm64.tar.gz"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.27/invincible-macos-arm64.tar.gz"
           },
           {
             "name": "SHA256SUMS",
             "size": 360,
             "downloads": 7,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.27/SHA256SUMS"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.27/SHA256SUMS"
           },
           {
             "name": "SHA256SUMS.sig",
             "size": 314,
             "downloads": 6,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.27/SHA256SUMS.sig"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.27/SHA256SUMS.sig"
           },
           {
             "name": "VERSION",
             "size": 7,
             "downloads": 6,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.27/VERSION"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.27/VERSION"
           }
         ]
       },
@@ -948,7 +948,7 @@
         "tag": "v0.0.26",
         "name": "v0.0.26",
         "published": "2026-10-29T01:04:59Z",
-        "url": "https://github.com/wckdboy/invincible/releases/tag/v0.0.26",
+        "url": "https://github.com/WCKDai/invincible/releases/tag/v0.0.26",
         "prerelease": false,
         "body": "Invincible 0.0.26 — delegation respects your words.\n\n## What changed\n\nA delegated run may nudge the agent past a routine question. It must not nudge it past **your**\ninstruction. If the task says to wait, not guess, ask first, check with you, let you decide or\nconfirm, the run now does something different:\n\n- `delegate.started.questions` is `\"owner\"`.\n- The first question ends the run for you. There is no nudge, no guessed filename, no file.\n- `delegate.finished.waiting_on_owner` is true.\n\nThis came from a real alpha run: the task said “Do not guess. Then wait for my answer,” and 0.0.25\nnudged the agent into choosing `delegated.md`. 0.0.26 stops at the question instead.\n\nThe same rule is in the nudge text as a second guard: if the original message says to wait, not to\nguess or to confirm, follow that and stop with `DELEGATION: NEED_OWNER`.\n\n## Verified\n\n- 252 library tests and 16 API tests pass; clippy is clean.\n- A real local-model run with “Ask me which filename… Do not guess… wait for my answer” produced\n  `questions: \"owner\"`, no `delegate.nudge`, `waiting_on_owner: true`, and no file.\n- The 0.0.25 delegated run, webhook, stall and declined-approval tests still pass.\n\n## Upgrade\n\n```sh\ninvincible update\n# or\ncurl -fsSL https://invincible.sh/install.sh | sh\n```\n\nThe installed service reports `invincible 0.0.26` and `autobot 0.0.26`.",
         "assets": [
@@ -956,37 +956,37 @@
             "name": "invincible-linux-arm64.tar.gz",
             "size": 11909250,
             "downloads": 3,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.26/invincible-linux-arm64.tar.gz"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.26/invincible-linux-arm64.tar.gz"
           },
           {
             "name": "invincible-linux-x64.tar.gz",
             "size": 13050157,
             "downloads": 23,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.26/invincible-linux-x64.tar.gz"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.26/invincible-linux-x64.tar.gz"
           },
           {
             "name": "invincible-macos-arm64.tar.gz",
             "size": 11442956,
             "downloads": 3,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.26/invincible-macos-arm64.tar.gz"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.26/invincible-macos-arm64.tar.gz"
           },
           {
             "name": "SHA256SUMS",
             "size": 360,
             "downloads": 7,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.26/SHA256SUMS"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.26/SHA256SUMS"
           },
           {
             "name": "SHA256SUMS.sig",
             "size": 314,
             "downloads": 5,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.26/SHA256SUMS.sig"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.26/SHA256SUMS.sig"
           },
           {
             "name": "VERSION",
             "size": 7,
             "downloads": 5,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.26/VERSION"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.26/VERSION"
           }
         ]
       },
@@ -994,7 +994,7 @@
         "tag": "v0.0.25",
         "name": "v0.0.25",
         "published": "2026-10-29T00:42:09Z",
-        "url": "https://github.com/wckdboy/invincible/releases/tag/v0.0.25",
+        "url": "https://github.com/WCKDai/invincible/releases/tag/v0.0.25",
         "prerelease": false,
         "body": "Invincible 0.0.25 — delegated work.\n\n## Keep going\n\nAutobot can now take a task and keep it moving while you are away. Tick **Keep going** in the\npanel's Chat, or send `\"delegated\": true` with a turn.\n\nIt is deliberately bounded:\n\n- **Nudges.** When an answer stops to ask a routine question, the run adds one message telling\n  the agent to decide routine details itself and continue. Two by default, five at most. An\n  answer that begins `DELEGATION: NEED_OWNER` stops the run for you instead.\n- **Approvals are never accepted.** Every safety check is declined with a redirect: use a safer\n  way or skip it, and keep going. The stream reports `delegate.declined`. After a decline the run\n  stops for you rather than nudging the agent to work around your decision.\n- **Stalls.** A turn that produces no event for 15 minutes is stopped and nudged once. A running\n  tool gets three times as long, because a build may be busy without speaking.\n- **Usage limits.** A limit that clears within 5 minutes is waited out, with heartbeats so the\n  stream stays open. A longer one pauses the run with `retry_at`, and the task can be sent again\n  then.\n- **Budget.** One request runs at most 8 turns, whatever the nudges and waits.\n\nEvery nudge, decline, stall and pause is an event on the same versioned turn stream. The panel\nshows them in the transcript, and the final answer comes after the run's summary.\n\n## A webhook when it is over\n\nSet `[delegate] webhook` to get one JSON POST when a run finishes or stops: the answer, nudges,\ndeclines, receipts and retry time. With `webhook_secret_file` (or\n`$AUTOBOT_HOME/delegate-webhook.secret`), the body is signed with\n`X-Invincible-Signature: sha256=<HMAC-SHA256>`. The POST runs on its own task, so a slow endpoint\nnever delays the answer.\n\n## Also\n\n- `invincible update` now waits for a launchd job to finish unloading before bootstrapping the new\n  definition, retries a transient `bootstrap`, and brings an installed-but-unloaded job back. The\n  old path could leave both services down after an update.\n- The panel's final answer now appears after the delegated summary instead of being duplicated or\n  placed above the tools.\n\n## Verified\n\n- 252 Autobot library tests and 15 API tests pass; clippy is clean. The delegated tests cover\n  nudges, a declined approval (the command does not run), scope validation, and a long usage limit\n  pausing the run.\n- A ",
         "assets": [
@@ -1002,37 +1002,37 @@
             "name": "invincible-linux-arm64.tar.gz",
             "size": 11917981,
             "downloads": 2,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.25/invincible-linux-arm64.tar.gz"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.25/invincible-linux-arm64.tar.gz"
           },
           {
             "name": "invincible-linux-x64.tar.gz",
             "size": 13052743,
             "downloads": 4,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.25/invincible-linux-x64.tar.gz"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.25/invincible-linux-x64.tar.gz"
           },
           {
             "name": "invincible-macos-arm64.tar.gz",
             "size": 11435901,
             "downloads": 3,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.25/invincible-macos-arm64.tar.gz"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.25/invincible-macos-arm64.tar.gz"
           },
           {
             "name": "SHA256SUMS",
             "size": 360,
             "downloads": 4,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.25/SHA256SUMS"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.25/SHA256SUMS"
           },
           {
             "name": "SHA256SUMS.sig",
             "size": 314,
             "downloads": 4,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.25/SHA256SUMS.sig"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.25/SHA256SUMS.sig"
           },
           {
             "name": "VERSION",
             "size": 7,
             "downloads": 4,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.25/VERSION"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.25/VERSION"
           }
         ]
       },
@@ -1040,7 +1040,7 @@
         "tag": "v0.0.24",
         "name": "v0.0.24",
         "published": "2026-10-28T23:43:09Z",
-        "url": "https://github.com/wckdboy/invincible/releases/tag/v0.0.24",
+        "url": "https://github.com/WCKDai/invincible/releases/tag/v0.0.24",
         "prerelease": false,
         "body": "Invincible 0.0.24 — a live turn.\n\n## The turn stream, v1\n\nEvery turn is now one versioned event stream. Each event has `v: 1` and a `type`; fields are\nadditive and a client ignores what it does not know.\n\n- `turn.started` opens the turn.\n- `text` and `reasoning` carry deltas as the model streams, so a chat can show the answer while\n  it is being written.\n- `tool` and `tool_output` show a tool about to run and what it gave back (the output in the\n  event is capped; the conversation keeps the full result).\n- `diff` and `change` show a write before it happens; `usage` and `receipt` account for each\n  model call.\n- `approval` carries the exact action and an id; `refused` says when a tool was refused;\n  `member` reports a teammate; `answer` is the complete answer and the end of the turn; `error`\n  is the failed end; `kept` follows a nudge.\n- `spec/agent.md` defines the grammar.\n\nExisting event types keep their shapes and gain `v`; nothing is removed. The panel's **Chat**\nnow renders live text, diffs, tool output and approval cards instead of waiting for the final\nanswer.\n\n## Also in 0.0.23\n\nThread worktrees with a branch each, thread diffs and one-click PRs; the control panel's rooms\nfor chat, workspaces, bots, integrations, usage and settings; the agent settings/model/tools/\nsecrets/bots APIs. The alpha runs it at **https://agent.invincible.sh**.\n\n## Upgrade\n\n```sh\ninvincible update\n# or\ncurl -fsSL https://invincible.sh/install.sh | sh\n```\n\nThe installed service reports `invincible 0.0.24` and `autobot 0.0.24`.",
         "assets": [
@@ -1048,37 +1048,37 @@
             "name": "invincible-linux-arm64.tar.gz",
             "size": 11851751,
             "downloads": 2,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.24/invincible-linux-arm64.tar.gz"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.24/invincible-linux-arm64.tar.gz"
           },
           {
             "name": "invincible-linux-x64.tar.gz",
             "size": 12982501,
             "downloads": 7,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.24/invincible-linux-x64.tar.gz"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.24/invincible-linux-x64.tar.gz"
           },
           {
             "name": "invincible-macos-arm64.tar.gz",
             "size": 11378511,
             "downloads": 3,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.24/invincible-macos-arm64.tar.gz"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.24/invincible-macos-arm64.tar.gz"
           },
           {
             "name": "SHA256SUMS",
             "size": 360,
             "downloads": 5,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.24/SHA256SUMS"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.24/SHA256SUMS"
           },
           {
             "name": "SHA256SUMS.sig",
             "size": 314,
             "downloads": 4,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.24/SHA256SUMS.sig"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.24/SHA256SUMS.sig"
           },
           {
             "name": "VERSION",
             "size": 7,
             "downloads": 4,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.24/VERSION"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.24/VERSION"
           }
         ]
       },
@@ -1086,7 +1086,7 @@
         "tag": "v0.0.23",
         "name": "v0.0.23",
         "published": "2026-10-28T21:01:46Z",
-        "url": "https://github.com/wckdboy/invincible/releases/tag/v0.0.23",
+        "url": "https://github.com/WCKDai/invincible/releases/tag/v0.0.23",
         "prerelease": false,
         "body": "Invincible 0.0.23 — a thread is a checkout.\n\n## Threads\n\n- `autobot thread start` creates a conversation with a git worktree and a branch of its own, from the project the bot works in. `thread list`, `show`, `diff`, `pr` and `remove` finish the job. Two agents can work in parallel without touching each other's files.\n- The agent API exposes `/v1/agent/threads`: create, list, diff and remove, plus `/pr` for one-click pull requests. A turn in a thread's session uses its worktree and its project map.\n- `thread pr` stages and commits with a fixed Autobot identity, pushes (an HTTPS GitHub remote uses `GH_TOKEN` through a one-shot credential helper, so the token is not in the URL or the command line), and opens the pull request with `gh`, the GitHub API and `GH_TOKEN`/`GITHUB_TOKEN`, or returns the compare link after the push.\n- A removed thread leaves a tombstone: an old session cannot silently fall back to the main checkout.\n\n## Control plane\n\nThe panel in [`platform/services/agent`](https://github.com/WCKDai/platform/tree/main/services/agent) is now the full operator surface:\n\n- **Overview** — gateway, agent, today's tokens and cost, approvals.\n- **Chat** — transcript, streamed turns, a new conversation.\n- **Workspaces** — start a thread, use it, read its diff, open its PR, remove it.\n- **Bots** — list, add, enable, disable, reload.\n- **Integrations** — the channel matrix, write-only token files (`0600`), configured MCP servers.\n- **Usage** — tokens, cost, models, tools, failures, the gateway audit.\n- **Settings** — the models the gateway serves (provider keys stay in the gateway), the bot's model, approvals, tool groups, any advanced dotted key.\n\nThe agent API gained validated settings, model selection, tool groups, write-only secret files in the bot home, and bot creation. The panel proxies only the routes it needs; the browser never sees a provider key.\n\nThe alpha runs it at **https://agent.invincible.sh**.\n\n## Upgrade\n\n```sh\ninvincible update\n# or\ncurl -fsSL https://invincible.sh/install.sh | sh\n```\n\nThe installed service reports `invincible 0.0.23` and `autobot 0.0.23`.",
         "assets": [
@@ -1094,37 +1094,37 @@
             "name": "invincible-linux-arm64.tar.gz",
             "size": 11850734,
             "downloads": 2,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.23/invincible-linux-arm64.tar.gz"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.23/invincible-linux-arm64.tar.gz"
           },
           {
             "name": "invincible-linux-x64.tar.gz",
             "size": 12981248,
             "downloads": 19,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.23/invincible-linux-x64.tar.gz"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.23/invincible-linux-x64.tar.gz"
           },
           {
             "name": "invincible-macos-arm64.tar.gz",
             "size": 11376151,
             "downloads": 3,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.23/invincible-macos-arm64.tar.gz"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.23/invincible-macos-arm64.tar.gz"
           },
           {
             "name": "SHA256SUMS",
             "size": 360,
             "downloads": 7,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.23/SHA256SUMS"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.23/SHA256SUMS"
           },
           {
             "name": "SHA256SUMS.sig",
             "size": 314,
             "downloads": 5,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.23/SHA256SUMS.sig"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.23/SHA256SUMS.sig"
           },
           {
             "name": "VERSION",
             "size": 7,
             "downloads": 5,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.23/VERSION"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.23/VERSION"
           }
         ]
       },
@@ -1132,7 +1132,7 @@
         "tag": "v0.0.22",
         "name": "v0.0.22",
         "published": "2026-10-28T18:36:51Z",
-        "url": "https://github.com/wckdboy/invincible/releases/tag/v0.0.22",
+        "url": "https://github.com/WCKDai/invincible/releases/tag/v0.0.22",
         "prerelease": false,
         "body": "Invincible 0.0.22 — Autobot and the node, together.\n\n## Autobot\n\n- `autobot run` now starts a fresh conversation for every one-shot task. `--session NAME` continues one on purpose, so a task never inherits the last task's context. This was found by the harness comparing agents.\n- Coding turns use a measured tight loop: read what is needed in one pass, make the smallest change, run the relevant test once, and stop when it passes. On the hard `spec-implementation` task this took a 450-second timeout to a pass in 267.5 seconds; a generated project profile reached 156.8 seconds.\n- `autobot review` sends the current diff to a separate read-only reviewer; `autobot map` shows the compact project map a coding session starts with; `--approvals auto` lets commands and project changes run in the project while network and outside reads still ask.\n- The agent suite covers the project map, the reviewer, autonomous approvals and the new session rules.\n\n## Gateway\n\n- `POST /v1/embeddings` serves an embedding model the node owns; `POST /v1/audio/transcriptions` passes multipart audio to a speech-to-text backend on the same machine. Both are bounded, receipted and audited, and neither leaves the node.\n- The merge with `main` brings cluster, discovery and dispatch, per-engine keys and clean engine environments, the installer lock and supervisor fixes.\n- Reproducible static Linux (x86_64, arm64) and macOS (Apple silicon) binaries; SHA256SUMS signed with the pinned release key; build-provenance attestations.\n\n## Upgrade\n\n```sh\ninvincible update\n# or\ncurl -fsSL https://invincible.sh/install.sh | sh\n```\n\nThe installed service reports `invincible 0.0.22` and `autobot 0.0.22`.",
         "assets": [
@@ -1140,37 +1140,37 @@
             "name": "invincible-linux-arm64.tar.gz",
             "size": 11692630,
             "downloads": 2,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.22/invincible-linux-arm64.tar.gz"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.22/invincible-linux-arm64.tar.gz"
           },
           {
             "name": "invincible-linux-x64.tar.gz",
             "size": 12823164,
             "downloads": 23,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.22/invincible-linux-x64.tar.gz"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.22/invincible-linux-x64.tar.gz"
           },
           {
             "name": "invincible-macos-arm64.tar.gz",
             "size": 11228909,
             "downloads": 2,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.22/invincible-macos-arm64.tar.gz"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.22/invincible-macos-arm64.tar.gz"
           },
           {
             "name": "SHA256SUMS",
             "size": 360,
             "downloads": 7,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.22/SHA256SUMS"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.22/SHA256SUMS"
           },
           {
             "name": "SHA256SUMS.sig",
             "size": 314,
             "downloads": 4,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.22/SHA256SUMS.sig"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.22/SHA256SUMS.sig"
           },
           {
             "name": "VERSION",
             "size": 7,
             "downloads": 4,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.22/VERSION"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.22/VERSION"
           }
         ]
       },
@@ -1178,7 +1178,7 @@
         "tag": "v0.0.21",
         "name": "v0.0.21",
         "published": "2026-10-21T20:26:34Z",
-        "url": "https://github.com/wckdboy/invincible/releases/tag/v0.0.21",
+        "url": "https://github.com/WCKDai/invincible/releases/tag/v0.0.21",
         "prerelease": false,
         "body": "## What's Changed\n* Agent harness: steadier, faster, and better at handling a model that misbehaves by @wckdboy in https://github.com/wckdboy/invincible/pull/15\n* Hardening: soak at rest, browser cold start (INV-55), deadlines, no orphans by @wckdboy in https://github.com/wckdboy/invincible/pull/16\n\n\n**Full Changelog**: https://github.com/wckdboy/invincible/compare/v0.0.20...v0.0.21",
         "assets": [
@@ -1186,42 +1186,42 @@
             "name": "invincible-linux-arm64.tar.gz",
             "size": 10667894,
             "downloads": 3,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.21/invincible-linux-arm64.tar.gz"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.21/invincible-linux-arm64.tar.gz"
           },
           {
             "name": "invincible-linux-x64.tar.gz",
             "size": 11712593,
             "downloads": 11,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.21/invincible-linux-x64.tar.gz"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.21/invincible-linux-x64.tar.gz"
           },
           {
             "name": "invincible-macos-arm64.tar.gz",
             "size": 10187601,
             "downloads": 3,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.21/invincible-macos-arm64.tar.gz"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.21/invincible-macos-arm64.tar.gz"
           },
           {
             "name": "SHA256SUMS",
             "size": 360,
             "downloads": 111,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.21/SHA256SUMS"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.21/SHA256SUMS"
           },
           {
             "name": "SHA256SUMS.sig",
             "size": 314,
             "downloads": 15,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.21/SHA256SUMS.sig"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.21/SHA256SUMS.sig"
           },
           {
             "name": "VERSION",
             "size": 7,
             "downloads": 5,
-            "url": "https://github.com/wckdboy/invincible/releases/download/v0.0.21/VERSION"
+            "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.21/VERSION"
           }
         ]
       }
     ],
     "checksums": "06bd4714be58a9aa77f2fa2e681f754f75f63dc42c20d33cf27bb479e63ac0fc  invincible-linux-arm64.tar.gz\n92adf07f57d1e8ba2337ae9609a18d979fc08af5188ed2b050e211908f923a50  invincible-linux-x64.tar.gz\nc34dbcbf94173979283bcc29ee755988b6e56c6be009c416c1543597a94f4e3c  invincible-macos-arm64.tar.gz\nd3ccac5eb3092c590ac468b32c65ce0c673c35f2eeb622de404e3a15aaa8eb75  VERSION",
-    "totalDownloads": 495
+    "totalDownloads": 522
   }
 }

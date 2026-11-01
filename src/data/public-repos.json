@@ -232,12 +232,12 @@
     },
     {
       "name": "niobium",
-      "owner": "wckdboy",
-      "url": "https://github.com/wckdboy/niobium",
+      "owner": "WCKDai",
+      "url": "https://github.com/WCKDai/niobium",
       "description": "Niobium — a minimal iOS and Android command deck for Hermes Agent. Hermes profiles become Pixels, and the iOS 1.1 build can boot the full DeepSeek Harness locally in Alpine via iSH.",
       "visibility": "public",
       "isFork": false,
-      "isArchived": false
+      "isArchived": true
     },
     {
       "name": "niobium-companion",
