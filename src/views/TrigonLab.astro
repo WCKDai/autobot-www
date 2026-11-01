@@ -127,10 +127,11 @@ const status = [
     <h2>Build it</h2>
     <p>Trigon builds from source with a current Rust toolchain. Free keys from Dataforsyningen and Datafordeler unlock Danish heights and registers; without them, addresses come from OpenStreetMap.</p>
     <pre class="trigon-code"><code>cargo build --release -p trigon-studio -p trigon
-./target/release/trigon-studio model.trigon
+./target/release/trigon-studio model.trigon &amp;
 
-# then let your agent drive the running Studio
-claude mcp add trigon -- ./target/release/trigon mcp</code></pre>
+# register once, for every project; the agent then drives the running Studio
+claude mcp add --scope user trigon -- "$PWD/target/release/trigon" mcp</code></pre>
+    <p class="small">Keep Studio open while the agent works: with no Studio running, <span class="mono">trigon mcp</span> starts a session of its own instead of driving your window.</p>
   </section>
 
   <section id="status">
