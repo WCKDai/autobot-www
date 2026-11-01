@@ -8,6 +8,12 @@ on:
       - '.shots/**'
   pull_request:
   workflow_dispatch:
+  # The six-hourly refresh commits with GITHUB_TOKEN, which starts no push workflows;
+  # deploy what it baked once it has finished.
+  workflow_run:
+    workflows: [Refresh releases]
+    types: [completed]
+    branches: [main]
 
 concurrency:
   group: deploy-${{ github.ref }}
@@ -18,12 +24,16 @@ permissions:
 
 jobs:
   build:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     env:
       CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
       CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          # On workflow_run, deploy main as the refresh left it, not the commit that started it.
+          ref: ${{ github.event_name == 'workflow_run' && 'main' || '' }}
       - uses: pnpm/action-setup@v4
         with:
           version: 12.6.0
@@ -64,6 +74,26 @@ jobs:
       - name: Deploy wckd.ai
         if: ${{ env.CLOUDFLARE_API_TOKEN != '' && github.event_name != 'pull_request' }}
         run: npx --yes wrangler@4 deploy --config deploy/wckd.wrangler.jsonc
+
+      - name: Deploy nightfall.sh
+        if: ${{ env.CLOUDFLARE_API_TOKEN != '' && github.event_name != 'pull_request' }}
+        run: npx --yes wrangler@4 deploy --config deploy/nightfall.wrangler.jsonc
+
+      - name: Deploy tinyrex.sh
+        if: ${{ env.CLOUDFLARE_API_TOKEN != '' && github.event_name != 'pull_request' }}
+        run: npx --yes wrangler@4 deploy --config deploy/tinyrex.wrangler.jsonc
+
+      - name: Deploy trigon.sh
+        if: ${{ env.CLOUDFLARE_API_TOKEN != '' && github.event_name != 'pull_request' }}
+        run: npx --yes wrangler@4 deploy --config deploy/trigon.wrangler.jsonc
+
+      - name: Deploy www redirects
+        if: ${{ env.CLOUDFLARE_API_TOKEN != '' && github.event_name != 'pull_request' }}
+        run: npx --yes wrangler@4 deploy --config deploy/www.wrangler.jsonc
+
+      - name: Deploy polycore.dev redirect
+        if: ${{ env.CLOUDFLARE_API_TOKEN != '' && github.event_name != 'pull_request' }}
+        run: npx --yes wrangler@4 deploy --config deploy/polycore.wrangler.jsonc
 
       - name: Cloudflare is not configured
         if: ${{ env.CLOUDFLARE_API_TOKEN == '' }}

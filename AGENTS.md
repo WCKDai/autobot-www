@@ -10,7 +10,8 @@ the products; they must never lag them.
   `src/data/` for new status, features or limits, then `pnpm build:all`,
   `node scripts/check-links.mjs` and `npx wrangler deploy --config deploy/<site>.wrangler.jsonc`
   for each site that changed, after explicit publication approval. Pull requests only build;
-  `main` can also deploy Autobot, Invincible, Sovware and WCKD when Cloudflare is configured.
+  `main`, and each six-hourly release refresh, deploy Autobot, Invincible, Sovware, WCKD, Nightfall,
+  Tinyrex, Trigon, the www redirects and polycore.dev when Cloudflare is configured.
   Check those side effects before merging. Omnie deployments remain separate and explicit.
 - The product repository's GitHub README says the same thing as its site.
 - Plane has the matching work items and states.
