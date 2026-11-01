@@ -1,0 +1,9 @@
+{
+  // polycore.dev: a temporary redirect to the PolyCore repository until the kernel has a site.
+  "name": "polycore-redirect",
+  "main": "./polycore-redirect.js",
+  "compatibility_date": "2026-10-19",
+  "routes": [
+    { "pattern": "polycore.dev", "custom_domain": true }
+  ]
+}
