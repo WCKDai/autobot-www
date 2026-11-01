@@ -44,7 +44,7 @@ version of the kit at `/brand/`; wckd.ai's home is the master kit.
 | Polykrom | polykrom.app | Parametric CAD | `p` | electric lime `#CCFF00` (olive `#6E8600` on paper) |
 | PolyCore | polycore.dev | The 3D geometry kernel | `p` | trustworthy blue `#1D4E9E` (light `#6FA0F2` on ink) |
 | Creed | creed.sh | Engineering for agents | `c` | sage `#6D8053` (light `#C1CE9B` on ink) |
-| Axit | axit.sh | File search and reviewed cleanup | `a` | aged bronze `#7F5F33` (light `#C4995A` on ink) |
+| Axit | axit.sh | File search and reviewed cleanup | `a` | aged bronze `#7F5F33` (light `#C9A061` on ink) |
 | OpenEndo | openendo.org | Open research | `o` | hopeful yellow `#A08800` (light `#FFE04A` on ink) |
 | Tinyrex | tinyrex.sh | Lab project | `t` | electric lime `#5C7A00` (`#B8F000` on ink), a deeper sibling of Polykrom's |
 | Trigon | trigon.sh | Building modelling (BIM) | `t` | burnt orange `#B5470F` (light `#F0803C` on ink) |
