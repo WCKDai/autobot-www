@@ -35,19 +35,19 @@ version of the kit at `/brand/`; wckd.ai's home is the master kit.
 | --- | --- | --- | --- | --- |
 | WCKD | wckd.ai | The lab and company | `w` | ink `#111111` (white on ink) |
 | WCKD World | wckd.world | The first place | `w` | moss `#4F6A45` (light `#A7C99A` on ink) |
-| Sovware | sovware.io | The production arm for the stack | `s` | slate `#637282` (light `#B7C5D4` on ink) |
-| Autobot | autobot.sh | Private AI on your phone and your machine | `a` | purple `#7C5CFF` |
-| Invincible | invincible.sh | AI gateway and decentralized compute | `i` | signal orange `#FF8A1E` |
-| Omnie | omnie.sh / omnie.dk | App and data connections; e-conomic reporting first | `o` | phthalo `#00B386` |
-| Nightfall | nightfall.sh | Archived CAD research; reference for PolyCore | `n` | rose `#FF3E8A` |
-| Niobium | niobium.sh | A pixel-art home for your AI team | `n.` (the n and its companion pixel) | pastel purple `#A78BFA` |
+| Sovware | sovware.io | The production arm for the stack | `s` | grey `#6B6F73` (light `#B4B8BC` on ink) |
+| Autobot | autobot.sh | Private AI on your phone and your machine | `a` | deep purple `#4A1D96` (light `#9F7AEA` on ink) |
+| Invincible | invincible.sh | AI gateway and decentralized compute | `i` | bright gold `#A86F00` (light `#FFC020` on ink) |
+| Omnie | omnie.sh / omnie.dk | App and data connections; e-conomic reporting first | `o` | phthalo green `#0B5D45` (light `#2FB98A` on ink) |
+| Nightfall | nightfall.sh | Archived CAD research; reference for PolyCore | `n` | archived grey `#8E8A84` (`#6E6A64` on ink) |
+| Niobium | niobium.sh | A pixel-art home for your AI team | `n.` (the n and its companion pixel) | archived grey `#85807A` (`#77726B` on ink) |
 | Polykrom | polykrom.app | Parametric CAD | `p` | electric lime `#CCFF00` (olive `#6E8600` on paper) |
-| PolyCore | polycore.dev | The 3D geometry kernel | `p` | blue `#436A9D` (light `#91B9ED` on ink) |
+| PolyCore | polycore.dev | The 3D geometry kernel | `p` | trustworthy blue `#1D4E9E` (light `#6FA0F2` on ink) |
 | Creed | creed.sh | Engineering for agents | `c` | sage `#6D8053` (light `#C1CE9B` on ink) |
-| Axit | axit.sh | File search and reviewed cleanup | `a` | copper `#B3633D` (light `#D9966B` on ink) |
-| OpenEndo | openendo.org | Open research | `o` | mauve `#A64D79` (light `#E4A1C3` on ink) |
-| Tinyrex | tinyrex.sh | Lab project | `t` | ochre `#A78020` (light `#E4C563` on ink) |
-| Trigon | trigon.sh | Building modelling (BIM) | `t` | rose `#E11D48` (light `#FB7185` on ink) |
+| Axit | axit.sh | File search and reviewed cleanup | `a` | aged bronze `#7F5F33` (light `#C4995A` on ink) |
+| OpenEndo | openendo.org | Open research | `o` | hopeful yellow `#A08800` (light `#FFE04A` on ink) |
+| Tinyrex | tinyrex.sh | Lab project | `t` | electric lime `#5C7A00` (`#B8F000` on ink), a deeper sibling of Polykrom's |
+| Trigon | trigon.sh | Building modelling (BIM) | `t` | burnt orange `#B5470F` (light `#F0803C` on ink) |
 
 Each signal is one color identity with surface-specific shades: use `onPaper` on light surfaces
 and `onInk` on dark surfaces, as defined in `brand/kit.json`. Use the matching paper or ink
