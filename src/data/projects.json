@@ -23,10 +23,11 @@
     "id": "niobium",
     "name": "Niobium",
     "kind": "A home for your Pixels",
-    "description": "Connect to Hermes or run DSH locally. Give your agents distinct personas and companions, with their own chats and rooms. Full Hermes parity is still in development.",
+    "description": "Archived for now. A pixel-art home for your AI team: Hermes and on-device DSH clients, personas, companions, chats and rooms. The source stays readable; development is paused.",
     "site": "https://niobium.sh",
     "repo": "niobium",
-    "status": "Android beta · desktop preview",
+    "source": "https://github.com/WCKDai/niobium",
+    "status": "Archived · development paused",
     "brand": "niobium"
   },
   {

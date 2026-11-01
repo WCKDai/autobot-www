@@ -1,6 +1,6 @@
 /* Tinyrex learning lab. Deliberately contained: shared Lab and brand tokens stay untouched. */
 .tinyrex-learning {
-  --rex-accent: #a78020;
+  --rex-accent: #5c7a00;
   --rex-soft: #f3f1eb;
   --rex-ink-on-accent: #111;
   color: var(--ink);
@@ -8,7 +8,7 @@
   padding-bottom: 32px;
 }
 @media (prefers-color-scheme: dark) {
-  .tinyrex-learning { --rex-accent: #e4c563; --rex-soft: #1b1a17; }
+  .tinyrex-learning { --rex-accent: #b8f000; --rex-soft: #1b1a17; }
 }
 .tinyrex-learning *, .tinyrex-learning *::before, .tinyrex-learning *::after { min-width: 0; }
 .tinyrex-learning p { max-width: none; }

@@ -72,8 +72,8 @@
         "....##",
         "#####."
       ],
-      "onInk": "#B7C5D4",
-      "onPaper": "#637282",
+      "onInk": "#B4B8BC",
+      "onPaper": "#6B6F73",
       "text": "#111111"
     },
     "autobot": {
@@ -88,8 +88,8 @@
         "##..##",
         ".#####"
       ],
-      "onInk": "#7C5CFF",
-      "onPaper": "#7C5CFF",
+      "onInk": "#9F7AEA",
+      "onPaper": "#4A1D96",
       "text": "#7C5CFF"
     },
     "invincible": {
@@ -104,8 +104,8 @@
         "##",
         "##"
       ],
-      "onInk": "#FF8A1E",
-      "onPaper": "#FF8A1E",
+      "onInk": "#FFC020",
+      "onPaper": "#A86F00",
       "text": "#FF8A1E"
     },
     "omnie": {
@@ -120,8 +120,8 @@
         "##...##",
         ".#####."
       ],
-      "onInk": "#00B386",
-      "onPaper": "#00B386",
+      "onInk": "#2FB98A",
+      "onPaper": "#0B5D45",
       "text": "#00B386"
     },
     "nightfall": {
@@ -136,8 +136,8 @@
         "##..##",
         "##..##"
       ],
-      "onInk": "#FF3E8A",
-      "onPaper": "#FF3E8A",
+      "onInk": "#6E6A64",
+      "onPaper": "#8E8A84",
       "text": "#FF3E8A"
     },
     "polykrom": {
@@ -154,8 +154,8 @@
       "domain": "polycore.dev",
       "role": "The 3D geometry kernel",
       "glyph": ["#####.", "##..##", "##..##", "#####.", "##....", "##...."],
-      "onInk": "#91B9ED",
-      "onPaper": "#436A9D",
+      "onInk": "#6FA0F2",
+      "onPaper": "#1D4E9E",
       "text": "#111111"
     },
     "creed": {
@@ -172,8 +172,8 @@
       "domain": "openendo.org",
       "role": "Open endometriosis research",
       "glyph": [".#####.", "##...##", "##...##", "##...##", "##...##", ".#####."],
-      "onInk": "#E4A1C3",
-      "onPaper": "#A64D79",
+      "onInk": "#FFE04A",
+      "onPaper": "#A08800",
       "text": "#111111"
     },
     "tinyrex": {
@@ -181,8 +181,8 @@
       "domain": "tinyrex.sh",
       "role": "A WCKD lab project",
       "glyph": ["##....", "#####.", "##....", "##....", "##..##", ".####."],
-      "onInk": "#E4C563",
-      "onPaper": "#A78020",
+      "onInk": "#B8F000",
+      "onPaper": "#5C7A00",
       "text": "#111111"
     },
     "trigon": {
@@ -190,8 +190,8 @@
       "domain": "trigon.sh",
       "role": "Building modelling, driven by AI over MCP",
       "glyph": ["..##..", "######", "..##..", "..##..", "..##..", "...###"],
-      "onInk": "#FB7185",
-      "onPaper": "#E11D48",
+      "onInk": "#F0803C",
+      "onPaper": "#B5470F",
       "text": "#111111"
     },
     "axit": {
@@ -199,8 +199,8 @@
       "domain": "axit.sh",
       "role": "File search and reviewed cleanup",
       "glyph": [".####.", "....##", ".#####", "##..##", "##..##", ".#####"],
-      "onInk": "#D9966B",
-      "onPaper": "#B3633D",
+      "onInk": "#C4995A",
+      "onPaper": "#7F5F33",
       "text": "#111111"
     },
     "niobium": {
@@ -215,8 +215,8 @@
         "##..##..",
         "##..##.#"
       ],
-      "onInk": "#A78BFA",
-      "onPaper": "#A78BFA",
+      "onInk": "#77726B",
+      "onPaper": "#85807A",
       "text": "#A78BFA"
     }
   }

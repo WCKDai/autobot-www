@@ -7,7 +7,7 @@ The homepage is `src/views/TinyRexLab.astro`; its original components and contai
 dependencies, external requests, persistent state, meshes, renderer or hardware interface are added.
 The hero is an original SVG illustration, explicitly a schematic, not a render or exact CAD view.
 The site inherits system light/dark preferences and the shared JetBrains Mono / pixel-t identity.
-Ochre is #A78020 in light and #E4C563 in dark; lime is confined to the robot illustration.
+The accent is electric lime, a deeper sibling of Polykrom's: #5C7A00 in light and #B8F000 in dark.
 
 Facts were read from the native Tinyrex repository (HEAD
 `a40e994a88fd3abd71caf972dc9267e8a7fef1ad`) on 2026-10-30. The design sources below
