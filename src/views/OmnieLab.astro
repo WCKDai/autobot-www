@@ -5,9 +5,9 @@ import report from '../data/omnie-report.json';
 
 const da = meta.key === 'omnie-dk';
 const t = da ? {
-  status: 'under udvikling / e-conomic først',
+  status: 'under udvikling / integrationshub, e-conomic først',
   headline: ['mindre kopiering.', 'mere overblik.'],
-  intro: 'Vi bygger Omnie til at forbinde apps og data, så de kan bruges til noget. Første fokus er projekt- og kontodata fra e-conomic — hentet gennem Omnie Connect-appen og brugt til rapporter i Omnie.',
+  intro: 'Vi bygger Omnie som en integrationshub: ét sted, der forbinder de faglige værktøjer, du allerede bruger, så deres data kan bruges sammen. Første integration er e-conomic — projekt- og kontodata hentet gennem Omnie Connect-appen og brugt til rapporter i Omnie.',
   primary: 'Se et rapporteksempel', secondary: 'Sådan hænger det sammen',
   sketch: 'omnie / rapportskitse', projectOverview: 'Projektoverblik', period: 'januar–marts 2026 · DKK',
   contribution: 'bidrag efter direkte omkostninger', fictional: 'Eksempel med fiktive data. Ikke en live forbindelse.',
@@ -30,22 +30,22 @@ const t = da ? {
     ['Hvilket spørgsmål mangler svar?', 'Den første konkrete rapport vælges ud fra et reelt behov. Ikke ud fra, hvor mange dashboards vi kan love.'],
   ],
   scopeLabel: '03 / fokus lige nu', scopeTitle: 'e-conomic ind. Brugbare rapporter ud.',
-  scopeText: 'Omnie kan på sigt forbinde flere apps og datapunkter. Lige nu holder vi fokus på e-conomic, projekt- og kontodata samt rapporter gennem Omnie og Omnie Connect.',
+  scopeText: 'Omnie er bygget som en hub, så flere faglige værktøjer kan forbindes over tid — én integration ad gangen. Lige nu holder vi fokus på e-conomic, projekt- og kontodata samt rapporter gennem Omnie og Omnie Connect.',
   now: 'Første fase', nowItems: ['e-conomic som første integration', 'Udtræk af projekt- og kontodata', 'Rapporter med et tydeligt datagrundlag'],
-  later: 'Ikke i første fase', laterItems: ['En lang liste af andre integrationer', 'Tilbageskrivning til e-conomic', 'Et nyt regnskabssystem'],
+  later: 'Ikke i første fase', laterItems: ['Flere integrationer, før e-conomic virker godt', 'Tilbageskrivning til e-conomic', 'Et nyt regnskabssystem'],
   faqTitle: 'Et par ting, helt klart.',
   faqs: [
     ['Kan jeg forbinde min e-conomic-aftale her?', 'Nej. Dette er en produktside med et rapporteksempel. Den opretter ikke forbindelse til e-conomic, indsamler ikke dine loginoplysninger og behandler ikke regnskabsdata.'],
     ['Er Omnie Connect og Omnie det samme?', 'De hører sammen, men har forskellige roller: Omnie Connect er connector-appen, der skal hente data. Omnie er stedet, hvor data skal bruges til at bygge rapporter.'],
     ['Er løsningen klar til brug?', 'Arbejdet er under udvikling. Der er endnu ikke en offentlig connector-download, onboarding eller en bekræftet liste over rapporttyper på denne side.'],
-    ['Hvad med de tidligere Omnie-apps?', 'Omnies aktuelle retning er forbindelser og rapportering. De tidligere udvikler- og redigeringsværktøjer er separate projekter, ikke dokumentation for den nye connectors funktioner.'],
+    ['Hvad med de tidligere Omnie-apps?', 'Omnie er nu en integrationshub for faglige værktøjer. De tidligere udvikler- og redigeringsværktøjer udvikles ikke videre som Omnie og er ikke dokumentation for den nye connectors funktioner.'],
   ],
   closing: ['forbind data.', 'få overblik.'], closingText: 'Én konkret integration er et bedre sted at begynde end et løfte om at forbinde alt.',
   back: 'Til rapporteksemplet', skip: 'Spring til indhold', navigation: 'Hovednavigation',
 } : {
-  status: 'in development / e-conomic first',
+  status: 'in development / integration hub, e-conomic first',
   headline: ['less copying.', 'more clarity.'],
-  intro: 'We’re building Omnie to connect apps and data, and make them useful. First: project and account data from e-conomic, pulled through the Omnie Connect app and used to build reports in Omnie.',
+  intro: 'We’re building Omnie as an integration hub: one place that connects the professional tools you already use, so their data can work together. The first integration is e-conomic: project and account data pulled through the Omnie Connect app and used to build reports in Omnie.',
   primary: 'Explore a report example', secondary: 'See how it fits',
   sketch: 'omnie / report sketch', projectOverview: 'Project overview', period: 'January–March 2026 · DKK',
   contribution: 'contribution after direct costs', fictional: 'Example with fictional data. Not a live connection.',
@@ -68,15 +68,15 @@ const t = da ? {
     ['Which question needs an answer?', 'The first concrete report will be chosen around a real need, not the number of dashboards we can promise.'],
   ],
   scopeLabel: '03 / the current focus', scopeTitle: 'e-conomic in. Useful reports out.',
-  scopeText: 'Omnie can connect more apps and data points over time. Right now the focus is e-conomic, project and account data, and reporting through Omnie and Omnie Connect.',
+  scopeText: 'Omnie is built as a hub, so more professional tools can connect over time, one integration at a time. Right now the focus is e-conomic, project and account data, and reporting through Omnie and Omnie Connect.',
   now: 'First phase', nowItems: ['e-conomic as the first integration', 'Extract project and account data', 'Reports with a clear data basis'],
-  later: 'Outside the first phase', laterItems: ['A long list of other integrations', 'Writing changes back to e-conomic', 'Replacing your accounting system'],
+  later: 'Outside the first phase', laterItems: ['More integrations before e-conomic works well', 'Writing changes back to e-conomic', 'Replacing your accounting system'],
   faqTitle: 'A few things, made clear.',
   faqs: [
     ['Can I connect my e-conomic account here?', 'No. This is a product page with an illustrative report. It does not connect to e-conomic, collect login details or process accounting data.'],
     ['Are Omnie Connect and Omnie the same thing?', 'They fit together, but have different roles: Omnie Connect is the connector app being built to pull data. Omnie is where that data will be used to build reports.'],
     ['Is the product available?', 'It is in development. There is no public connector download, onboarding flow or confirmed set of report types on this page yet.'],
-    ['What about the earlier Omnie apps?', 'Omnie’s current direction is connections and reporting. Earlier development and editing tools remain separate projects, not evidence of the new connector’s capabilities.'],
+    ['What about the earlier Omnie apps?', 'Omnie is now an integration hub for professional tools. The earlier development and editing tools are no longer developed as Omnie, and are not evidence of the new connector’s capabilities.'],
   ],
   closing: ['connect the data.', 'see the picture.'], closingText: 'One useful connection is a better starting point than a promise to connect everything.',
   back: 'Back to the report example', skip: 'Skip to content', navigation: 'Primary',
@@ -132,7 +132,7 @@ const alternates = [
   <section id="questions" aria-labelledby="questions-title">
     <h2 id="questions-title">{t.faqTitle}</h2><div class="questions">{t.faqs.map(([question, answer]) => <details><summary>{question}</summary><p>{answer}</p></details>)}</div>
   </section>
-  <section class="closing"><div><p class="label">omnie / e-conomic first</p><h2>{t.closing[0]}<br />{t.closing[1]}</h2><p>{t.closingText}</p></div><a href="#reports">{t.back} <span aria-hidden="true">↑</span></a></section>
+  <section class="closing"><div><p class="label">omnie / integration hub</p><h2>{t.closing[0]}<br />{t.closing[1]}</h2><p>{t.closingText}</p></div><a href="#reports">{t.back} <span aria-hidden="true">↑</span></a></section>
 </Lab>
 
 <style>

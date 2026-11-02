@@ -104,12 +104,12 @@ const configs: Record<SiteKey, SiteMeta> = {
   },
   omnie: {
     key: 'omnie', name: 'Omnie', wordmark: 'omnie', domain: 'omnie.sh', origin: 'https://omnie.sh',
-    title: 'Omnie — from e-conomic data to useful reports', description: 'Omnie connects apps and data for reporting. First: project and account data from e-conomic through the Omnie Connect app. Read-only reporting, in development.',
+    title: 'Omnie — the integration hub for professional tools', description: 'Omnie connects the professional tools you already use. First: project and account data from e-conomic through the Omnie Connect app. Read-only reporting, in development.',
     theme: 'paper', nav: [], other: 'wckd', repo: 'https://wckd.ai', license: 'Not published', tagline: 'Connect the data. See the picture.', og: '/og.png',
   },
   'omnie-dk': {
     key: 'omnie-dk', name: 'Omnie', wordmark: 'omnie', domain: 'omnie.dk', origin: 'https://omnie.dk',
-    title: 'Omnie — fra e-conomic til overblik', description: 'Omnie forbinder apps og data til rapporter. Første fokus: projekt- og kontodata fra e-conomic gennem Omnie Connect-appen. Læsebaseret rapportering, under udvikling.',
+    title: 'Omnie — integrationshub for faglige værktøjer', description: 'Omnie forbinder de faglige værktøjer, du allerede bruger. Første fokus: projekt- og kontodata fra e-conomic gennem Omnie Connect-appen. Læsebaseret rapportering, under udvikling.',
     theme: 'paper', nav: [], other: 'wckd', repo: 'https://wckd.ai', license: 'Ikke udgivet', tagline: 'Forbind data. Få overblik.', og: '/og.png',
   },
   nightfall: {

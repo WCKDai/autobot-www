@@ -75,7 +75,7 @@ const sourceUrl = (p: { repo?: string; source?: string }) => p.source ?? (p.repo
 
   <section id="omnie" aria-labelledby="omnie-title">
     <h2 id="omnie-title">Earlier Omnie apps.</h2>
-    <p>Omnie’s current focus is e-conomic data and reporting through Omnie Connect. These earlier tools remain separate projects; their capabilities are not the new connector’s feature list.</p>
+    <p>Omnie is now an integration hub for professional tools, starting with e-conomic through Omnie Connect. These earlier apps are no longer developed as Omnie; their capabilities are not the hub’s feature list.</p>
     <ul class="small-projects">{omnie.map(([name, repo, description]) => (
       <li><h3><a href={repoUrl(repo)}>{name} <span aria-hidden="true">↗</span></a></h3><p>{description}</p></li>
     ))}</ul>
