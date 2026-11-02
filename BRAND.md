@@ -46,8 +46,11 @@ version of the kit at `/brand/`; wckd.ai's home is the master kit.
 | Creed | creed.sh | Engineering for agents | `c` | sage `#6D8053` (light `#C1CE9B` on ink) |
 | Axit | axit.sh | File search and reviewed cleanup | `a` | aged bronze `#7F5F33` (light `#C9A061` on ink) |
 | OpenEndo | openendo.org | Open research | `o` | hopeful yellow `#A08800` (light `#FFE04A` on ink) |
-| Tinyrex | tinyrex.sh | Lab project | `t` | electric lime `#5C7A00` (`#B8F000` on ink), a deeper sibling of Polykrom's |
+| Tinyrex | tinyrex.sh | Polykrom's flagship robotics demo | `t` | Polykrom electric lime `#CCFF00` |
 | Trigon | trigon.sh | Building modelling (BIM) | `t` | burnt orange `#B5470F` (light `#F0803C` on ink) |
+
+Tinyrex intentionally shares Polykrom's electric lime signature as its flagship demo. Its mark uses
+`#CCFF00` in both themes; surrounding text and controls stay neutral. Other product signals remain distinct.
 
 Each signal is one color identity with surface-specific shades: use `onPaper` on light surfaces
 and `onInk` on dark surfaces, as defined in `brand/kit.json`. Use the matching paper or ink
