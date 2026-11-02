@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-01",
+  "updated": "2026-11-02",
   "owners": [
     "WCKDai",
     "wckdboy"
@@ -252,7 +252,7 @@
       "name": "omnie-dev",
       "owner": "WCKDai",
       "url": "https://github.com/WCKDai/omnie-dev",
-      "description": "",
+      "description": "Omnie: an integration hub for professional tools, starting with e-conomic via Omnie Connect (in development). Holds the earlier Omnie Dev IDE as reference.",
       "visibility": "public",
       "isFork": false,
       "isArchived": false
