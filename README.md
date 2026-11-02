@@ -104,17 +104,19 @@ Both workflows also run these checks. Browser checks use an installed Chrome/Chr
 all eight homepages, brand pages and manifest identities at desktop/mobile/320px/dark profiles.
 The previous implementation is recorded in [`docs/tinyrex-learning.md`](docs/tinyrex-learning.md).
 
-## Omnie: e-conomic reporting first
+## Omnie: an integration hub, e-conomic first
 
 `omnie.sh` is English (`pnpm build:omnie`, `dist/omnie`); `omnie.dk` is Danish
 (`pnpm build:omnie-dk`, `dist/omnie-dk`). Each has its own canonical origin, sitemap and
 deployment config. Reciprocal `hreflang` links connect the homepages. Both use the same Omnie
 brand; the shared brand guide remains English.
 
-The current direction is e-conomic → Omnie Connect → reports in Omnie. The connector app
-is intended to pull project/account data; Omnie is where it will be used to build reports.
-Read-only extraction comes first. More integrations, write-back and replacing the accounting
-system are outside this phase. Earlier IDE/editing apps are separate projects.
+Omnie is becoming an integration hub for professional tools. The first integration is
+e-conomic → Omnie Connect → reports in Omnie. The connector app is intended to pull
+project/account data; Omnie is where it will be used to build reports. Read-only extraction comes
+first. Further integrations follow one at a time; write-back and replacing the accounting system
+are outside this phase. The earlier IDE/editing apps (Omnie Dev and others) are no longer
+developed as Omnie.
 
 The sites state **in development**. The examples use only `src/data/omnie-report.json`, an
 explicitly fictional dataset. They do not connect to e-conomic, collect credentials, process
