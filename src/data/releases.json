@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T19:56:55.521Z",
+  "generatedAt": "2026-11-06T06:44:35.815Z",
   "autobot": {
     "name": "autobot",
     "description": "Private AI agent for Android and iOS that runs on the phone's NPU/GPU: chat, agent, image generation and voice, with opt-in cloud, redaction and privacy receipts.",
@@ -558,7 +558,7 @@
         {
           "name": "SHA256SUMS",
           "size": 360,
-          "downloads": 87,
+          "downloads": 89,
           "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.33/SHA256SUMS"
         },
         {
@@ -651,7 +651,7 @@
           {
             "name": "SHA256SUMS",
             "size": 360,
-            "downloads": 87,
+            "downloads": 89,
             "url": "https://github.com/WCKDai/invincible/releases/download/v0.0.33/SHA256SUMS"
           },
           {
@@ -1222,6 +1222,6 @@
       }
     ],
     "checksums": "06bd4714be58a9aa77f2fa2e681f754f75f63dc42c20d33cf27bb479e63ac0fc  invincible-linux-arm64.tar.gz\n92adf07f57d1e8ba2337ae9609a18d979fc08af5188ed2b050e211908f923a50  invincible-linux-x64.tar.gz\nc34dbcbf94173979283bcc29ee755988b6e56c6be009c416c1543597a94f4e3c  invincible-macos-arm64.tar.gz\nd3ccac5eb3092c590ac468b32c65ce0c673c35f2eeb622de404e3a15aaa8eb75  VERSION",
-    "totalDownloads": 556
+    "totalDownloads": 558
   }
 }
