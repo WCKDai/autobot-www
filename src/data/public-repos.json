@@ -141,6 +141,15 @@
       "isArchived": false
     },
     {
+      "name": "glogg",
+      "owner": "WCKDai",
+      "url": "https://github.com/WCKDai/glogg",
+      "description": "Local-first, anti-slop federated search workbench with inspectable ranking, SQLite FTS5 Deep Index, zero-click computations, and self-hosted Docker compose.",
+      "visibility": "public",
+      "isFork": false,
+      "isArchived": false
+    },
+    {
       "name": "gmk-kiosk",
       "owner": "wckdboy",
       "url": "https://github.com/wckdboy/gmk-kiosk",
